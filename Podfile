@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'pet' do
+pod 'AFNetworking', '~> 3.0'
+pod 'SDWebImage', '~>3.8'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'SVProgressHUD'
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'CTAssetsPickerController',  '~> 3.3.0'
+pod 'WYPopoverController'
+pod 'DateTools'
+pod 'UIColor+Hex'
+pod 'NSDate+TimeAgo'
+pod 'MWPhotoBrowser'
+pod 'YYCache'
+pod 'NSObject-NSCoding'
+pod 'SDCycleScrollView','~> 1.64'
+pod 'TTTAttributedLabel'
+pod 'YYText'
+pod 'UITableView+FDTemplateLayoutCell'
+end
+

@@ -1,0 +1,29 @@
+//
+//  PetPrefixHeader.pch
+//  pet
+//
+//  Created by chilim on 2017/5/19.
+//  Copyright © 2017年 chilim. All rights reserved.
+//
+
+#ifndef PetPrefixHeader_pch
+#define PetPrefixHeader_pch
+#ifdef __OBJC__
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <MJRefresh/MJRefresh.h>
+#import "CLPetColor.h"
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "CLUntil.h"
+#import "UIImageView+Avatar.h"
+#import <Masonry.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+#import "CLShareObject.h"
+
+#endif
+
+
+#endif /* PetPrefixHeader_pch */
