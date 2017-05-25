@@ -10,6 +10,7 @@
 		183C55371ED6AE0F002BF2B6 /* CLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55361ED6AE0F002BF2B6 /* CLMenuItem.m */; };
 		183C55421ED6E3B6002BF2B6 /* CLServiceChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C553E1ED6E3B6002BF2B6 /* CLServiceChildVC.m */; };
 		183C55451ED6E419002BF2B6 /* CLServiceChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55441ED6E419002BF2B6 /* CLServiceChildCell.m */; };
+		183C55481ED6FA0C002BF2B6 /* CLServiceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */; };
 		184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76291ED3D748004A132B /* CLDynamicHeadView.m */; };
 		184A762D1ED3E3EA004A132B /* CLChannelHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */; };
 		184A76341ED415CB004A132B /* Rectangle 4 Copy 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A762E1ED415CB004A132B /* Rectangle 4 Copy 2@2x.png */; };
@@ -89,6 +90,8 @@
 		183C553E1ED6E3B6002BF2B6 /* CLServiceChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceChildVC.m; sourceTree = "<group>"; };
 		183C55431ED6E419002BF2B6 /* CLServiceChildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLServiceChildCell.h; sourceTree = "<group>"; };
 		183C55441ED6E419002BF2B6 /* CLServiceChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceChildCell.m; sourceTree = "<group>"; };
+		183C55461ED6FA0C002BF2B6 /* CLServiceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLServiceViewModel.h; sourceTree = "<group>"; };
+		183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceViewModel.m; sourceTree = "<group>"; };
 		184A76281ED3D748004A132B /* CLDynamicHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDynamicHeadView.h; sourceTree = "<group>"; };
 		184A76291ED3D748004A132B /* CLDynamicHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDynamicHeadView.m; sourceTree = "<group>"; };
 		184A762B1ED3E3EA004A132B /* CLChannelHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChannelHeadView.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		183C55411ED6E3B6002BF2B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				183C55461ED6FA0C002BF2B6 /* CLServiceViewModel.h */,
+				183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -989,6 +994,7 @@
 				D405446F1ED1C8A100C70B29 /* CLCommentTableCell.m in Sources */,
 				184A763C1ED43744004A132B /* CLMineVC.m in Sources */,
 				D42E25F61ECFD126002D3F7D /* CLPageVC.m in Sources */,
+				183C55481ED6FA0C002BF2B6 /* CLServiceViewModel.m in Sources */,
 				D42E25E01ECF31C9002D3F7D /* UIViewController+Extention.m in Sources */,
 				D405445F1ED0368D00C70B29 /* CLIntroductionBaseVC.m in Sources */,
 				D42E26111ECFEB11002D3F7D /* CLChildCommunityVC.m in Sources */,
