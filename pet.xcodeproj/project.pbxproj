@@ -17,6 +17,7 @@
 		183C55521ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554C1ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png */; };
 		183C55531ED6FD08002BF2B6 /* Rectangle 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554D1ED6FD08002BF2B6 /* Rectangle 4@2x.png */; };
 		183C55541ED6FD08002BF2B6 /* Rectangle 4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554E1ED6FD08002BF2B6 /* Rectangle 4@3x.png */; };
+		183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55561ED70281002BF2B6 /* CLServiceModel.m */; };
 		184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76291ED3D748004A132B /* CLDynamicHeadView.m */; };
 		184A762D1ED3E3EA004A132B /* CLChannelHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */; };
 		184A763C1ED43744004A132B /* CLMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A763B1ED43744004A132B /* CLMineVC.m */; };
@@ -98,6 +99,8 @@
 		183C554C1ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4 Copy@3x.png"; sourceTree = "<group>"; };
 		183C554D1ED6FD08002BF2B6 /* Rectangle 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4@2x.png"; sourceTree = "<group>"; };
 		183C554E1ED6FD08002BF2B6 /* Rectangle 4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4@3x.png"; sourceTree = "<group>"; };
+		183C55551ED70281002BF2B6 /* CLServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLServiceModel.h; sourceTree = "<group>"; };
+		183C55561ED70281002BF2B6 /* CLServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceModel.m; sourceTree = "<group>"; };
 		184A76281ED3D748004A132B /* CLDynamicHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDynamicHeadView.h; sourceTree = "<group>"; };
 		184A76291ED3D748004A132B /* CLDynamicHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDynamicHeadView.m; sourceTree = "<group>"; };
 		184A762B1ED3E3EA004A132B /* CLChannelHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChannelHeadView.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 		183C553F1ED6E3B6002BF2B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				183C55551ED70281002BF2B6 /* CLServiceModel.h */,
+				183C55561ED70281002BF2B6 /* CLServiceModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -987,6 +992,7 @@
 				184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */,
 				D42E25DA1ECF2C69002D3F7D /* CLServiceVC.m in Sources */,
 				D42E26171ECFEE66002D3F7D /* CLSelectHeadView.m in Sources */,
+				183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */,
 				D42E256C1ECF1D67002D3F7D /* main.m in Sources */,
 				184A76541ED44456004A132B /* CLMineSectionView.m in Sources */,
 				D42E25CE1ECF2C28002D3F7D /* CLCommunityVC.m in Sources */,

@@ -10,4 +10,9 @@
 
 @interface CLServiceViewModel : NSObject
 
+@property (nonatomic, strong) NSMutableArray *serviceList;
+
+//服务数据
+- (void)getServiceDataList:(void (^)())finished;
+
 @end

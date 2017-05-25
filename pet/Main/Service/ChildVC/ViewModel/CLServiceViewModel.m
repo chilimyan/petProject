@@ -10,4 +10,8 @@
 
 @implementation CLServiceViewModel
 
+- (void)getServiceDataList:(void (^)())finished{
+    
+}
+
 @end
