@@ -32,14 +32,14 @@
 }
 
 - (void)registerIntroduction {
-//    // 第一次启动
-//    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-//    if(![userDefault boolForKey:@"firstLaunch"])
-//    {
-//        [userDefault setBool:YES forKey:@"firstLaunch"];
-//        [userDefault synchronize];
+    // 第一次启动
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    if(![userDefault boolForKey:@"firstLaunch"])
+    {
+        [userDefault setBool:YES forKey:@"firstLaunch"];
+        [userDefault synchronize];
         [self showIntroduction];
-//    }
+    }
     
     // 欢迎页通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showIntroduction) name:@"showIntroduction" object:nil];
