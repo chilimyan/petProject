@@ -7,8 +7,12 @@
 //
 
 #import "CLServiceChildVC.h"
+#import "CLServiceViewModel.h"
+#import "CLServiceChildCell.h"
 
 @interface CLServiceChildVC ()
+
+@property (nonatomic, strong) CLServiceViewModel *viewModel;
 
 @end
 
@@ -16,7 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _viewModel = [[CLServiceViewModel alloc] init];
+    [self loadData];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData];
+    }];
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [self loadData];
+    }];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,10 +36,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)initView{
+    self.tableView.separatorInset = UIEdgeInsetsMake(0, 80, 0, 0);
+    self.tableView.separatorColor = COLOR_SEPLINE_GRAY;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0,64 + 49, 0);
+}
+
+- (void)loadData{
+    [_viewModel getServiceDataList:^{
+        [self.tableView reloadData];
+    }];
+    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));
+    
+    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer resetNoMoreData];
+    });}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return _viewModel.serviceList.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -41,58 +70,27 @@
     return 0.01f;
 }
 
-/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 84;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    static NSString *cellIndentifier = @"CLMinePersonCenterCell";
+    CLServiceChildCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    if (!cell) {
+        cell = [[CLServiceChildCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+     FosterCareModel *model = _viewModel.serviceList[indexPath.row];
+    cell.fosterCareModel = model;
     
     return cell;
-}
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

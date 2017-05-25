@@ -14,6 +14,9 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *address;
 @property (nonatomic, copy) NSString *money;
+@property (nonatomic, copy) NSString *scoreCount;
+@property (nonatomic, copy) NSString *score;
+@property (nonatomic, copy) NSString *distance;
 
 @end
 

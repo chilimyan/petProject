@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLServiceModel.h"
 
 @interface CLServiceChildCell : UITableViewCell
+
+@property (nonatomic, strong) FosterCareModel *fosterCareModel;
 
 @end

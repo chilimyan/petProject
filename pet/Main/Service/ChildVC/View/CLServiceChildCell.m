@@ -16,6 +16,9 @@
 @property (nonatomic, strong) UILabel *moneyLabel;
 @property (nonatomic, strong) UILabel *addressLabel;
 @property (nonatomic, strong) UILabel *scoreLabel;
+@property (nonatomic, strong) UIView *imageScoreView;
+
+@property (nonatomic, strong) NSMutableArray *starArray;
 
 @end
 
@@ -38,6 +41,7 @@
     [self.contentView addSubview:self.addressBtn];
     [self.contentView addSubview:self.scoreLabel];
     [self.contentView addSubview:self.addressLabel];
+    [self.contentView addSubview:self.imageScoreView];
 }
 
 - (void)setupConstraints{
@@ -48,7 +52,7 @@
     }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make){
         make.top.mas_equalTo(self.headImage.mas_top).mas_offset(0);
-        make.left.mas_equalTo(self.headImage.mas_left).mas_offset(12);
+        make.left.mas_equalTo(self.headImage.mas_right).mas_offset(12);
         make.bottom.mas_equalTo(self.moneyLabel.mas_top).mas_offset(-8);
     }];
     [self.addressBtn mas_makeConstraints:^(MASConstraintMaker *make){
@@ -58,14 +62,41 @@
         make.left.mas_equalTo(self.contentView.mas_left).mas_offset(kScreen.width - 120);
     }];
     [self.moneyLabel mas_makeConstraints:^(MASConstraintMaker *make){
-        make.left.mas_equalTo(self.headImage.mas_left).mas_offset(12);
+        make.left.mas_equalTo(self.headImage.mas_right).mas_offset(12);
         make.bottom.mas_equalTo(self.addressLabel.mas_top).mas_offset(-8);
     }];
     [self.addressLabel mas_makeConstraints:^(MASConstraintMaker *make){
-        make.left.mas_equalTo(self.headImage.mas_left).mas_offset(12);
+        make.left.mas_equalTo(self.headImage.mas_right).mas_offset(12);
         make.bottom.mas_equalTo(self.contentView.mas_bottom).mas_offset(-12);
     }];
-    
+    [self.imageScoreView mas_makeConstraints:^(MASConstraintMaker *make){
+        make.left.mas_equalTo(self.moneyLabel.mas_right).mas_offset(8);
+        make.width.mas_equalTo(84);
+        make.centerY.mas_equalTo(self.moneyLabel.mas_centerY);
+    }];
+    [self.starArray mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:3 leadSpacing:3 tailSpacing:3];
+    [self.starArray mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.imageScoreView.mas_top).offset(0);
+        make.bottom.mas_equalTo(self.imageScoreView.mas_bottom).mas_offset(0);
+    }];
+    [self.scoreLabel mas_makeConstraints:^(MASConstraintMaker *make){
+        make.centerY.mas_equalTo(self.moneyLabel.mas_centerY);
+        make.left.mas_equalTo(self.imageScoreView.mas_right).mas_offset(8);
+    }];
+}
+
+- (void)setFosterCareModel:(FosterCareModel *)fosterCareModel{
+    _fosterCareModel = fosterCareModel;
+    self.headImage.image = [UIImage imageNamed:_fosterCareModel.imageUrl];
+    self.titleLabel.text = _fosterCareModel.title;
+    self.moneyLabel.text = [NSString stringWithFormat:@"平均%@元/天",_fosterCareModel.money];
+    self.addressLabel.text = _fosterCareModel.address;
+    [self.addressBtn setTitle:_fosterCareModel.distance forState:UIControlStateNormal];
+    self.scoreLabel.text = _fosterCareModel.score;
+    for (int i = 0; i < [_fosterCareModel.scoreCount integerValue]; i ++) {
+        UIImageView *starImage = self.starArray[i];
+        starImage.image = [UIImage imageNamed:@"Star Copy 3"];
+    }
 }
 
 - (UIImageView *)headImage{
@@ -73,6 +104,21 @@
         _headImage = [[UIImageView alloc] init];
     }
     return _headImage;
+}
+
+- (UIView *)imageScoreView{
+    if (!_imageScoreView) {
+        self.starArray = [NSMutableArray array];
+        _imageScoreView = [[UIView alloc] init];
+        _imageScoreView.backgroundColor = [UIColor clearColor];
+        for (int i = 0; i < 5; i ++) {
+            UIImageView *starImage = [[UIImageView alloc] init];
+            starImage.image = [UIImage imageNamed:@"Star Copy 4"];
+            [_imageScoreView addSubview:starImage];
+            [self.starArray addObject:starImage];
+        }
+    }
+    return _imageScoreView;
 }
 
 - (UILabel *)titleLabel{
@@ -122,6 +168,8 @@
         [_addressBtn setTitleColor:[UIColor colorWithCSS:@"#aaaafc"] forState:UIControlStateNormal];
         _addressBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_addressBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+        [_addressBtn setImage:[UIImage imageNamed:@"定位距离"] forState:UIControlStateNormal];
+        _addressBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 3);
     }
     return _addressBtn;
 }

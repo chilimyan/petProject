@@ -65,6 +65,7 @@
 		D42E26171ECFEE66002D3F7D /* CLSelectHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E26161ECFEE66002D3F7D /* CLSelectHeadView.m */; };
 		D42E261A1ECFF12E002D3F7D /* CLChildCommunityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E26191ECFF12E002D3F7D /* CLChildCommunityViewModel.m */; };
 		D42E261D1ECFF144002D3F7D /* CLCommunityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E261C1ECFF144002D3F7D /* CLCommunityModel.m */; };
+		D43AFFD61ED7290600A04C03 /* CLChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D43AFFD51ED7290600A04C03 /* CLChannelTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +195,8 @@
 		D42E26191ECFF12E002D3F7D /* CLChildCommunityViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChildCommunityViewModel.m; sourceTree = "<group>"; };
 		D42E261B1ECFF144002D3F7D /* CLCommunityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommunityModel.h; sourceTree = "<group>"; };
 		D42E261C1ECFF144002D3F7D /* CLCommunityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCommunityModel.m; sourceTree = "<group>"; };
+		D43AFFD41ED7290600A04C03 /* CLChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChannelTableViewCell.h; sourceTree = "<group>"; };
+		D43AFFD51ED7290600A04C03 /* CLChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChannelTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -756,6 +759,8 @@
 				184A76291ED3D748004A132B /* CLDynamicHeadView.m */,
 				184A762B1ED3E3EA004A132B /* CLChannelHeadView.h */,
 				184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */,
+				D43AFFD41ED7290600A04C03 /* CLChannelTableViewCell.h */,
+				D43AFFD51ED7290600A04C03 /* CLChannelTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -976,6 +981,7 @@
 				D42E25D11ECF2C39002D3F7D /* CLDoctorVC.m in Sources */,
 				183C55421ED6E3B6002BF2B6 /* CLServiceChildVC.m in Sources */,
 				183C55451ED6E419002BF2B6 /* CLServiceChildCell.m in Sources */,
+				D43AFFD61ED7290600A04C03 /* CLChannelTableViewCell.m in Sources */,
 				D42E25EF1ECF3A3D002D3F7D /* CLShareObject.m in Sources */,
 				D42E26141ECFED71002D3F7D /* CLCommunityViewModel.m in Sources */,
 				D42E25E51ECF38B9002D3F7D /* UIImageView+Avatar.m in Sources */,

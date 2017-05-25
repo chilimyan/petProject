@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLServiceModel.h"
 
 @interface CLServiceViewModel : NSObject
 
