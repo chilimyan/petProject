@@ -11,14 +11,14 @@
 		183C55421ED6E3B6002BF2B6 /* CLServiceChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C553E1ED6E3B6002BF2B6 /* CLServiceChildVC.m */; };
 		183C55451ED6E419002BF2B6 /* CLServiceChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55441ED6E419002BF2B6 /* CLServiceChildCell.m */; };
 		183C55481ED6FA0C002BF2B6 /* CLServiceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */; };
+		183C554F1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C55491ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png */; };
+		183C55501ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554A1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png */; };
+		183C55511ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554B1ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png */; };
+		183C55521ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554C1ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png */; };
+		183C55531ED6FD08002BF2B6 /* Rectangle 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554D1ED6FD08002BF2B6 /* Rectangle 4@2x.png */; };
+		183C55541ED6FD08002BF2B6 /* Rectangle 4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C554E1ED6FD08002BF2B6 /* Rectangle 4@3x.png */; };
 		184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76291ED3D748004A132B /* CLDynamicHeadView.m */; };
 		184A762D1ED3E3EA004A132B /* CLChannelHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */; };
-		184A76341ED415CB004A132B /* Rectangle 4 Copy 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A762E1ED415CB004A132B /* Rectangle 4 Copy 2@2x.png */; };
-		184A76351ED415CB004A132B /* Rectangle 4 Copy 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A762F1ED415CB004A132B /* Rectangle 4 Copy 2@3x.png */; };
-		184A76361ED415CB004A132B /* Rectangle 4 Copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A76301ED415CB004A132B /* Rectangle 4 Copy@2x.png */; };
-		184A76371ED415CB004A132B /* Rectangle 4 Copy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A76311ED415CB004A132B /* Rectangle 4 Copy@3x.png */; };
-		184A76381ED415CB004A132B /* Rectangle 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A76321ED415CB004A132B /* Rectangle 4@2x.png */; };
-		184A76391ED415CB004A132B /* Rectangle 4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184A76331ED415CB004A132B /* Rectangle 4@3x.png */; };
 		184A763C1ED43744004A132B /* CLMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A763B1ED43744004A132B /* CLMineVC.m */; };
 		184A76481ED43BE1004A132B /* CLMinePersonCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76471ED43BE1004A132B /* CLMinePersonCenterCell.m */; };
 		184A764B1ED43BF3004A132B /* CLMineDailyManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A764A1ED43BF3004A132B /* CLMineDailyManagerCell.m */; };
@@ -92,16 +92,16 @@
 		183C55441ED6E419002BF2B6 /* CLServiceChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceChildCell.m; sourceTree = "<group>"; };
 		183C55461ED6FA0C002BF2B6 /* CLServiceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLServiceViewModel.h; sourceTree = "<group>"; };
 		183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLServiceViewModel.m; sourceTree = "<group>"; };
+		183C55491ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4 Copy 2@2x.png"; sourceTree = "<group>"; };
+		183C554A1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4 Copy 2@3x.png"; sourceTree = "<group>"; };
+		183C554B1ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4 Copy@2x.png"; sourceTree = "<group>"; };
+		183C554C1ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4 Copy@3x.png"; sourceTree = "<group>"; };
+		183C554D1ED6FD08002BF2B6 /* Rectangle 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4@2x.png"; sourceTree = "<group>"; };
+		183C554E1ED6FD08002BF2B6 /* Rectangle 4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 4@3x.png"; sourceTree = "<group>"; };
 		184A76281ED3D748004A132B /* CLDynamicHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDynamicHeadView.h; sourceTree = "<group>"; };
 		184A76291ED3D748004A132B /* CLDynamicHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDynamicHeadView.m; sourceTree = "<group>"; };
 		184A762B1ED3E3EA004A132B /* CLChannelHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChannelHeadView.h; sourceTree = "<group>"; };
 		184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChannelHeadView.m; sourceTree = "<group>"; };
-		184A762E1ED415CB004A132B /* Rectangle 4 Copy 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4 Copy 2@2x.png"; path = "../../../归档(2)/社区/Rectangle 4 Copy 2@2x.png"; sourceTree = "<group>"; };
-		184A762F1ED415CB004A132B /* Rectangle 4 Copy 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4 Copy 2@3x.png"; path = "../../../归档(2)/社区/Rectangle 4 Copy 2@3x.png"; sourceTree = "<group>"; };
-		184A76301ED415CB004A132B /* Rectangle 4 Copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4 Copy@2x.png"; path = "../../../归档(2)/社区/Rectangle 4 Copy@2x.png"; sourceTree = "<group>"; };
-		184A76311ED415CB004A132B /* Rectangle 4 Copy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4 Copy@3x.png"; path = "../../../归档(2)/社区/Rectangle 4 Copy@3x.png"; sourceTree = "<group>"; };
-		184A76321ED415CB004A132B /* Rectangle 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4@2x.png"; path = "../../../归档(2)/社区/Rectangle 4@2x.png"; sourceTree = "<group>"; };
-		184A76331ED415CB004A132B /* Rectangle 4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 4@3x.png"; path = "../../../归档(2)/社区/Rectangle 4@3x.png"; sourceTree = "<group>"; };
 		184A763A1ED43744004A132B /* CLMineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMineVC.h; sourceTree = "<group>"; };
 		184A763B1ED43744004A132B /* CLMineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineVC.m; sourceTree = "<group>"; };
 		184A76461ED43BE1004A132B /* CLMinePersonCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMinePersonCenterCell.h; sourceTree = "<group>"; };
@@ -431,12 +431,12 @@
 		D42E25A31ECF228E002D3F7D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				184A762E1ED415CB004A132B /* Rectangle 4 Copy 2@2x.png */,
-				184A762F1ED415CB004A132B /* Rectangle 4 Copy 2@3x.png */,
-				184A76301ED415CB004A132B /* Rectangle 4 Copy@2x.png */,
-				184A76311ED415CB004A132B /* Rectangle 4 Copy@3x.png */,
-				184A76321ED415CB004A132B /* Rectangle 4@2x.png */,
-				184A76331ED415CB004A132B /* Rectangle 4@3x.png */,
+				183C55491ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png */,
+				183C554A1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png */,
+				183C554B1ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png */,
+				183C554C1ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png */,
+				183C554D1ED6FD08002BF2B6 /* Rectangle 4@2x.png */,
+				183C554E1ED6FD08002BF2B6 /* Rectangle 4@3x.png */,
 				D40544681ED0585900C70B29 /* 2B18C2D4941421681BD6B9FBCEC48C2D.jpg */,
 				D40544601ED0583E00C70B29 /* 402FD6493BFE31152566135415C9F22A.jpg */,
 				D40544661ED0585300C70B29 /* 5345651BD274DFFB326F6C016FAAF45F.jpg */,
@@ -874,17 +874,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40544691ED0585900C70B29 /* 2B18C2D4941421681BD6B9FBCEC48C2D.jpg in Resources */,
-				184A76391ED415CB004A132B /* Rectangle 4@3x.png in Resources */,
-				184A76341ED415CB004A132B /* Rectangle 4 Copy 2@2x.png in Resources */,
+				183C55541ED6FD08002BF2B6 /* Rectangle 4@3x.png in Resources */,
+				183C554F1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png in Resources */,
 				D40544651ED0584C00C70B29 /* 4E35FA4B2D9C0636815C709FBD94DF5E.jpg in Resources */,
 				D40544631ED0584700C70B29 /* 45C272AAE3D9309128203B6D77C10BE2.jpg in Resources */,
-				184A76361ED415CB004A132B /* Rectangle 4 Copy@2x.png in Resources */,
-				184A76371ED415CB004A132B /* Rectangle 4 Copy@3x.png in Resources */,
-				184A76381ED415CB004A132B /* Rectangle 4@2x.png in Resources */,
+				183C55511ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png in Resources */,
+				183C55521ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png in Resources */,
+				183C55531ED6FD08002BF2B6 /* Rectangle 4@2x.png in Resources */,
 				D42E257A1ECF1D67002D3F7D /* LaunchScreen.storyboard in Resources */,
 				D40544611ED0583E00C70B29 /* 402FD6493BFE31152566135415C9F22A.jpg in Resources */,
 				D42E25771ECF1D67002D3F7D /* Assets.xcassets in Resources */,
-				184A76351ED415CB004A132B /* Rectangle 4 Copy 2@3x.png in Resources */,
+				183C55501ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png in Resources */,
 				D42E25751ECF1D67002D3F7D /* Main.storyboard in Resources */,
 				D40544671ED0585300C70B29 /* 5345651BD274DFFB326F6C016FAAF45F.jpg in Resources */,
 			);
