@@ -26,6 +26,28 @@
 		184A764E1ED43C02004A132B /* CLMineShopingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A764D1ED43C02004A132B /* CLMineShopingCell.m */; };
 		184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76501ED43C11004A132B /* CLMineOtherCell.m */; };
 		184A76541ED44456004A132B /* CLMineSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76531ED44456004A132B /* CLMineSectionView.m */; };
+		18700AC51ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */; };
+		18700AC71ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */; };
+		18700AC91ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */; };
+		18700ACB1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ACA1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg */; };
+		18700ACD1ED827F9004AC634 /* E5DA662A3D3D4FA222092A0AD6933538.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ACC1ED827F9004AC634 /* E5DA662A3D3D4FA222092A0AD6933538.jpg */; };
+		18700ACF1ED827FF004AC634 /* F2A70F9E9D4FBD499D932346A221D318.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ACE1ED827FF004AC634 /* F2A70F9E9D4FBD499D932346A221D318.jpg */; };
+		18700AD11ED82808004AC634 /* 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AD01ED82808004AC634 /* 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg */; };
+		18700AD31ED8280D004AC634 /* A2B2A36A846BF4065FAF03DEBA993422.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AD21ED8280D004AC634 /* A2B2A36A846BF4065FAF03DEBA993422.jpg */; };
+		18700AD51ED82813004AC634 /* 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AD41ED82813004AC634 /* 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg */; };
+		18700AD71ED82819004AC634 /* E6211B634112B60F1AD9FEC391D1D96A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AD61ED82819004AC634 /* E6211B634112B60F1AD9FEC391D1D96A.jpg */; };
+		18700AD91ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AD81ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg */; };
+		18700ADB1ED82823004AC634 /* 8AFFFC0723FC0D56726926B5E04C1385.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ADA1ED82823004AC634 /* 8AFFFC0723FC0D56726926B5E04C1385.jpg */; };
+		18700ADD1ED82829004AC634 /* 91467F5AD88F7DA0B5636164CCF23A06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ADC1ED82829004AC634 /* 91467F5AD88F7DA0B5636164CCF23A06.jpg */; };
+		18700ADF1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700ADE1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg */; };
+		18700AE11ED82834004AC634 /* BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AE01ED82834004AC634 /* BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg */; };
+		18700AE31ED82839004AC634 /* 435086D44A0211F394F07558DF61C302.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AE21ED82839004AC634 /* 435086D44A0211F394F07558DF61C302.jpg */; };
+		18700AE51ED8283F004AC634 /* 972B22C928AD2121E4559EC9D34A2977.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AE41ED8283F004AC634 /* 972B22C928AD2121E4559EC9D34A2977.jpg */; };
+		18700AE71ED82844004AC634 /* 10529DB780736310C4FF9845869C56AE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AE61ED82844004AC634 /* 10529DB780736310C4FF9845869C56AE.jpg */; };
+		18700AE91ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AE81ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg */; };
+		18700AEB1ED82850004AC634 /* 78A7C90463B435BCC07F06AC5B210D55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AEA1ED82850004AC634 /* 78A7C90463B435BCC07F06AC5B210D55.jpg */; };
+		18700AED1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AEC1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg */; };
+		18700AF01ED82ED1004AC634 /* CLChannelImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */; };
 		188897E01ED2844D00125AFF /* CLDynamicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188897DF1ED2844D00125AFF /* CLDynamicTableViewCell.m */; };
 		614B62B4636A91CE374D7A9F /* libPods-pet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09A619C440B93D13D65305C /* libPods-pet.a */; };
 		D40544551ED0254400C70B29 /* CLSelectSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40544541ED0254400C70B29 /* CLSelectSectionView.m */; };
@@ -118,6 +140,29 @@
 		184A76501ED43C11004A132B /* CLMineOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineOtherCell.m; sourceTree = "<group>"; };
 		184A76521ED44456004A132B /* CLMineSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMineSectionView.h; sourceTree = "<group>"; };
 		184A76531ED44456004A132B /* CLMineSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineSectionView.m; sourceTree = "<group>"; };
+		18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0B3C1A13016F1E515EE9740DAFA886AE.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/0B3C1A13016F1E515EE9740DAFA886AE.jpg; sourceTree = "<group>"; };
+		18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; sourceTree = "<group>"; };
+		18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; sourceTree = "<group>"; };
+		18700ACA1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DA29B5D0C19AC558D7FDC5076E474BD8.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/DA29B5D0C19AC558D7FDC5076E474BD8.jpg; sourceTree = "<group>"; };
+		18700ACC1ED827F9004AC634 /* E5DA662A3D3D4FA222092A0AD6933538.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = E5DA662A3D3D4FA222092A0AD6933538.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/E5DA662A3D3D4FA222092A0AD6933538.jpg; sourceTree = "<group>"; };
+		18700ACE1ED827FF004AC634 /* F2A70F9E9D4FBD499D932346A221D318.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = F2A70F9E9D4FBD499D932346A221D318.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/F2A70F9E9D4FBD499D932346A221D318.jpg; sourceTree = "<group>"; };
+		18700AD01ED82808004AC634 /* 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/89F01C3E1C3DC463F9B2073CDDCFDE31.jpg; sourceTree = "<group>"; };
+		18700AD21ED8280D004AC634 /* A2B2A36A846BF4065FAF03DEBA993422.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = A2B2A36A846BF4065FAF03DEBA993422.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/A2B2A36A846BF4065FAF03DEBA993422.jpg; sourceTree = "<group>"; };
+		18700AD41ED82813004AC634 /* 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg; sourceTree = "<group>"; };
+		18700AD61ED82819004AC634 /* E6211B634112B60F1AD9FEC391D1D96A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = E6211B634112B60F1AD9FEC391D1D96A.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/E6211B634112B60F1AD9FEC391D1D96A.jpg; sourceTree = "<group>"; };
+		18700AD81ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = E91BB40B71793FFCC5783428F562E564.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/E91BB40B71793FFCC5783428F562E564.jpg; sourceTree = "<group>"; };
+		18700ADA1ED82823004AC634 /* 8AFFFC0723FC0D56726926B5E04C1385.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8AFFFC0723FC0D56726926B5E04C1385.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/8AFFFC0723FC0D56726926B5E04C1385.jpg; sourceTree = "<group>"; };
+		18700ADC1ED82829004AC634 /* 91467F5AD88F7DA0B5636164CCF23A06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 91467F5AD88F7DA0B5636164CCF23A06.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/91467F5AD88F7DA0B5636164CCF23A06.jpg; sourceTree = "<group>"; };
+		18700ADE1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 70C97AE030710503B15AA9694993F4DF.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/70C97AE030710503B15AA9694993F4DF.jpg; sourceTree = "<group>"; };
+		18700AE01ED82834004AC634 /* BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg; sourceTree = "<group>"; };
+		18700AE21ED82839004AC634 /* 435086D44A0211F394F07558DF61C302.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 435086D44A0211F394F07558DF61C302.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/435086D44A0211F394F07558DF61C302.jpg; sourceTree = "<group>"; };
+		18700AE41ED8283F004AC634 /* 972B22C928AD2121E4559EC9D34A2977.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 972B22C928AD2121E4559EC9D34A2977.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/972B22C928AD2121E4559EC9D34A2977.jpg; sourceTree = "<group>"; };
+		18700AE61ED82844004AC634 /* 10529DB780736310C4FF9845869C56AE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 10529DB780736310C4FF9845869C56AE.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/10529DB780736310C4FF9845869C56AE.jpg; sourceTree = "<group>"; };
+		18700AE81ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = B0CDB5DC5B73E8F92EF6A887E402C506.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/B0CDB5DC5B73E8F92EF6A887E402C506.jpg; sourceTree = "<group>"; };
+		18700AEA1ED82850004AC634 /* 78A7C90463B435BCC07F06AC5B210D55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 78A7C90463B435BCC07F06AC5B210D55.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/78A7C90463B435BCC07F06AC5B210D55.jpg; sourceTree = "<group>"; };
+		18700AEC1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 32309AE9E06B00C1E40984FEF07C3C13.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/32309AE9E06B00C1E40984FEF07C3C13.jpg; sourceTree = "<group>"; };
+		18700AEE1ED82ED1004AC634 /* CLChannelImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLChannelImagesView.h; sourceTree = "<group>"; };
+		18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChannelImagesView.m; sourceTree = "<group>"; };
 		188897DE1ED2844D00125AFF /* CLDynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDynamicTableViewCell.h; sourceTree = "<group>"; };
 		188897DF1ED2844D00125AFF /* CLDynamicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDynamicTableViewCell.m; sourceTree = "<group>"; };
 		3336EBFE8980394B461A17D1 /* Pods-pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pet/Pods-pet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +495,27 @@
 				D40544661ED0585300C70B29 /* 5345651BD274DFFB326F6C016FAAF45F.jpg */,
 				D40544621ED0584700C70B29 /* 45C272AAE3D9309128203B6D77C10BE2.jpg */,
 				D40544641ED0584C00C70B29 /* 4E35FA4B2D9C0636815C709FBD94DF5E.jpg */,
+				18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */,
+				18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */,
+				18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */,
+				18700ACA1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg */,
+				18700ACC1ED827F9004AC634 /* E5DA662A3D3D4FA222092A0AD6933538.jpg */,
+				18700ACE1ED827FF004AC634 /* F2A70F9E9D4FBD499D932346A221D318.jpg */,
+				18700AD01ED82808004AC634 /* 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg */,
+				18700AD21ED8280D004AC634 /* A2B2A36A846BF4065FAF03DEBA993422.jpg */,
+				18700AD41ED82813004AC634 /* 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg */,
+				18700AD61ED82819004AC634 /* E6211B634112B60F1AD9FEC391D1D96A.jpg */,
+				18700AD81ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg */,
+				18700ADA1ED82823004AC634 /* 8AFFFC0723FC0D56726926B5E04C1385.jpg */,
+				18700ADC1ED82829004AC634 /* 91467F5AD88F7DA0B5636164CCF23A06.jpg */,
+				18700ADE1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg */,
+				18700AE01ED82834004AC634 /* BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg */,
+				18700AE21ED82839004AC634 /* 435086D44A0211F394F07558DF61C302.jpg */,
+				18700AE41ED8283F004AC634 /* 972B22C928AD2121E4559EC9D34A2977.jpg */,
+				18700AE61ED82844004AC634 /* 10529DB780736310C4FF9845869C56AE.jpg */,
+				18700AE81ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg */,
+				18700AEA1ED82850004AC634 /* 78A7C90463B435BCC07F06AC5B210D55.jpg */,
+				18700AEC1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -761,6 +827,8 @@
 				184A762C1ED3E3EA004A132B /* CLChannelHeadView.m */,
 				D43AFFD41ED7290600A04C03 /* CLChannelTableViewCell.h */,
 				D43AFFD51ED7290600A04C03 /* CLChannelTableViewCell.m */,
+				18700AEE1ED82ED1004AC634 /* CLChannelImagesView.h */,
+				18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -884,19 +952,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40544691ED0585900C70B29 /* 2B18C2D4941421681BD6B9FBCEC48C2D.jpg in Resources */,
+				18700AE91ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg in Resources */,
+				18700AD91ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg in Resources */,
 				183C55541ED6FD08002BF2B6 /* Rectangle 4@3x.png in Resources */,
+				18700ADD1ED82829004AC634 /* 91467F5AD88F7DA0B5636164CCF23A06.jpg in Resources */,
+				18700AED1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg in Resources */,
+				18700AE31ED82839004AC634 /* 435086D44A0211F394F07558DF61C302.jpg in Resources */,
 				183C554F1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png in Resources */,
 				D40544651ED0584C00C70B29 /* 4E35FA4B2D9C0636815C709FBD94DF5E.jpg in Resources */,
+				18700AC91ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg in Resources */,
+				18700AD51ED82813004AC634 /* 6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg in Resources */,
+				18700AD71ED82819004AC634 /* E6211B634112B60F1AD9FEC391D1D96A.jpg in Resources */,
+				18700AC51ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg in Resources */,
+				18700ADB1ED82823004AC634 /* 8AFFFC0723FC0D56726926B5E04C1385.jpg in Resources */,
+				18700AE51ED8283F004AC634 /* 972B22C928AD2121E4559EC9D34A2977.jpg in Resources */,
 				D40544631ED0584700C70B29 /* 45C272AAE3D9309128203B6D77C10BE2.jpg in Resources */,
 				183C55511ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png in Resources */,
 				183C55521ED6FD08002BF2B6 /* Rectangle 4 Copy@3x.png in Resources */,
 				183C55531ED6FD08002BF2B6 /* Rectangle 4@2x.png in Resources */,
+				18700ACD1ED827F9004AC634 /* E5DA662A3D3D4FA222092A0AD6933538.jpg in Resources */,
 				D42E257A1ECF1D67002D3F7D /* LaunchScreen.storyboard in Resources */,
 				D40544611ED0583E00C70B29 /* 402FD6493BFE31152566135415C9F22A.jpg in Resources */,
 				D42E25771ECF1D67002D3F7D /* Assets.xcassets in Resources */,
+				18700AEB1ED82850004AC634 /* 78A7C90463B435BCC07F06AC5B210D55.jpg in Resources */,
+				18700AE71ED82844004AC634 /* 10529DB780736310C4FF9845869C56AE.jpg in Resources */,
+				18700AC71ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg in Resources */,
+				18700AE11ED82834004AC634 /* BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg in Resources */,
+				18700ACF1ED827FF004AC634 /* F2A70F9E9D4FBD499D932346A221D318.jpg in Resources */,
 				183C55501ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png in Resources */,
 				D42E25751ECF1D67002D3F7D /* Main.storyboard in Resources */,
+				18700AD11ED82808004AC634 /* 89F01C3E1C3DC463F9B2073CDDCFDE31.jpg in Resources */,
+				18700AD31ED8280D004AC634 /* A2B2A36A846BF4065FAF03DEBA993422.jpg in Resources */,
+				18700ADF1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg in Resources */,
 				D40544671ED0585300C70B29 /* 5345651BD274DFFB326F6C016FAAF45F.jpg in Resources */,
+				18700ACB1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,6 +1087,7 @@
 				184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */,
 				D42E25DA1ECF2C69002D3F7D /* CLServiceVC.m in Sources */,
 				D42E26171ECFEE66002D3F7D /* CLSelectHeadView.m in Sources */,
+				18700AF01ED82ED1004AC634 /* CLChannelImagesView.m in Sources */,
 				183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */,
 				D42E256C1ECF1D67002D3F7D /* main.m in Sources */,
 				184A76541ED44456004A132B /* CLMineSectionView.m in Sources */,

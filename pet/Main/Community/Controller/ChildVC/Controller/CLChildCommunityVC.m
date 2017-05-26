@@ -17,10 +17,11 @@
 #import <UITableView+FDTemplateLayoutCell.h>
 #import "CLDynamicHeadView.h"
 #import "CLChannelHeadView.h"
+#import "CLChannelTableViewCell.h"
 
 static NSString *const selectTableCellIdentify = @"selectTableCellIdentify";
 static NSString *const dynamicTableCellIdentify = @"dynamicTableCellIdentify";
-static NSString *const selectLikesCellIdentify = @"selectLikesCellIdentify";
+static NSString *const channelCellIdentify = @"channelCellIdentify";
 static NSString *const selectBtnCellIdentify = @"selectBtnCellIdentify";
 static NSString *const selectCommentCellIdentify = @"selectCommentCellIdentify";
 static CGFloat const selectSectionHeight = 10;
@@ -66,6 +67,7 @@ static CGFloat const selectSectionHeight = 10;
         self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         [self.tableView registerClass:[CLDynamicTableViewCell class] forCellReuseIdentifier:dynamicTableCellIdentify];
     }else{
+        [self.tableView registerClass:[CLChannelTableViewCell class] forCellReuseIdentifier:channelCellIdentify];
          self.tableView.tableFooterView = [UIView new];
         self.tableView.separatorColor = COLOR_SEPLINE_GRAY;
         self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -114,6 +116,9 @@ static CGFloat const selectSectionHeight = 10;
             [self.tableView.mj_footer resetNoMoreData];
         });
     }else{
+        [_viewModel getChannelDataList:^{
+            [self.tableView reloadData];
+        }];
         dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));
         
         dispatch_after(delayTime, dispatch_get_main_queue(), ^{
@@ -142,7 +147,7 @@ static CGFloat const selectSectionHeight = 10;
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
          return 1;
     }else{
-         return 0;
+         return 1;
     }
 }
 
@@ -153,7 +158,7 @@ static CGFloat const selectSectionHeight = 10;
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
         return _viewModel.dynamicList.count;
     }else{
-        return 0;
+        return _viewModel.channelList.count;
     }
 }
 
@@ -176,7 +181,10 @@ static CGFloat const selectSectionHeight = 10;
         cell.model = model;
         return cell;
     }else{
-        return nil;
+        CLChannelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:channelCellIdentify forIndexPath:indexPath];
+        CLChannelModel *model = _viewModel.channelList[indexPath.row];
+        cell.channelModel = model;
+        return cell;
     }
 }
 
@@ -246,9 +254,9 @@ static CGFloat const selectSectionHeight = 10;
             cell.model = model;
         }];
     }else{
-        return [tableView fd_heightForCellWithIdentifier:selectCommentCellIdentify cacheByIndexPath:indexPath configuration:^(CLCommentTableCell *cell) {
-            CLSelectModel *model = _viewModel.selectList[indexPath.section];
-            [cell setComment:model.comments[indexPath.row - 1]];
+        return [tableView fd_heightForCellWithIdentifier:channelCellIdentify cacheByIndexPath:indexPath configuration:^(CLChannelTableViewCell *cell) {
+            CLChannelModel *model = _viewModel.channelList[indexPath.row];
+            cell.channelModel = model;
         }];
     }
 }

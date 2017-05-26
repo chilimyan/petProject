@@ -62,7 +62,7 @@
 
 @end
 
-//动态
+//频道
 @interface CLChannelModel : NSObject
 //发布人头像
 @property (nonatomic, copy) NSString *createPhoto;
@@ -70,10 +70,8 @@
 @property (nonatomic, copy) NSString *createName;
 //发布人ID
 @property (nonatomic, copy) NSString *createId;
-//发布人地址
-@property (nonatomic, copy) NSString *createAddress;
-//发布时间
-@property (nonatomic, copy) NSString *createTime;
+//发布主题
+@property (nonatomic, copy) NSString *themeContent;
 //发布的图片
 @property (nonatomic, strong) NSArray *imageUrls;
 //发布的内容

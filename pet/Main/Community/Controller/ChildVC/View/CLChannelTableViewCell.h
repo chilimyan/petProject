@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLCommunityModel.h"
 
 @interface CLChannelTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) CLChannelModel *channelModel;
 
 @end
