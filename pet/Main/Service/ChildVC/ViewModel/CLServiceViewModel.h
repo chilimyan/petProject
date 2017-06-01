@@ -12,7 +12,10 @@
 @interface CLServiceViewModel : NSObject
 
 @property (nonatomic, strong) NSMutableArray *serviceList;
+@property (nonatomic, strong) NSMutableArray *doctorList;
 
+//医生列表
+- (void)getDoctorDataList:(void (^)())finished;
 //服务数据
 - (void)getServiceDataList:(void (^)())finished;
 

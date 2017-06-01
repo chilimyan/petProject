@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180A0E031EDED207006CBACD /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A0E021EDED207006CBACD /* NSArray+Sudoku.m */; };
 		183C55371ED6AE0F002BF2B6 /* CLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55361ED6AE0F002BF2B6 /* CLMenuItem.m */; };
 		183C55421ED6E3B6002BF2B6 /* CLServiceChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C553E1ED6E3B6002BF2B6 /* CLServiceChildVC.m */; };
 		183C55451ED6E419002BF2B6 /* CLServiceChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C55441ED6E419002BF2B6 /* CLServiceChildCell.m */; };
@@ -26,6 +27,9 @@
 		184A764E1ED43C02004A132B /* CLMineShopingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A764D1ED43C02004A132B /* CLMineShopingCell.m */; };
 		184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76501ED43C11004A132B /* CLMineOtherCell.m */; };
 		184A76541ED44456004A132B /* CLMineSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76531ED44456004A132B /* CLMineSectionView.m */; };
+		1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */; };
+		1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */; };
+		1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */; };
 		18700AC51ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */; };
 		18700AC71ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */; };
 		18700AC91ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */; };
@@ -108,6 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180A0E011EDED207006CBACD /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
+		180A0E021EDED207006CBACD /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
 		183C55351ED6AE0F002BF2B6 /* CLMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMenuItem.h; sourceTree = "<group>"; };
 		183C55361ED6AE0F002BF2B6 /* CLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMenuItem.m; sourceTree = "<group>"; };
 		183C553D1ED6E3B6002BF2B6 /* CLServiceChildVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLServiceChildVC.h; sourceTree = "<group>"; };
@@ -140,6 +146,12 @@
 		184A76501ED43C11004A132B /* CLMineOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineOtherCell.m; sourceTree = "<group>"; };
 		184A76521ED44456004A132B /* CLMineSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMineSectionView.h; sourceTree = "<group>"; };
 		184A76531ED44456004A132B /* CLMineSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineSectionView.m; sourceTree = "<group>"; };
+		1860AF381EDFBC3200EC5232 /* CLDoctorTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDoctorTableView.h; sourceTree = "<group>"; };
+		1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDoctorTableView.m; sourceTree = "<group>"; };
+		1860AF3B1EDFBC4A00EC5232 /* CLDoctorHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDoctorHeadView.h; sourceTree = "<group>"; };
+		1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDoctorHeadView.m; sourceTree = "<group>"; };
+		1860AF3E1EDFEE1400EC5232 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0B3C1A13016F1E515EE9740DAFA886AE.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/0B3C1A13016F1E515EE9740DAFA886AE.jpg; sourceTree = "<group>"; };
 		18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; sourceTree = "<group>"; };
 		18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; sourceTree = "<group>"; };
@@ -416,6 +428,8 @@
 		D42E259D1ECF228E002D3F7D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				180A0E011EDED207006CBACD /* NSArray+Sudoku.h */,
+				180A0E021EDED207006CBACD /* NSArray+Sudoku.m */,
 				D42E25E71ECF38CF002D3F7D /* UIImage+Extension.h */,
 				D42E25E81ECF38CF002D3F7D /* UIImage+Extension.m */,
 				D42E25E11ECF38B9002D3F7D /* UIImageView+Avatar.h */,
@@ -426,6 +440,8 @@
 				D42E25DC1ECF31C9002D3F7D /* NSString+CLStringTools.m */,
 				D42E25DD1ECF31C9002D3F7D /* UIViewController+Extention.h */,
 				D42E25DE1ECF31C9002D3F7D /* UIViewController+Extention.m */,
+				1860AF3E1EDFEE1400EC5232 /* UIView+Extension.h */,
+				1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -621,6 +637,10 @@
 		D42E25BB1ECF2BDE002D3F7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1860AF381EDFBC3200EC5232 /* CLDoctorTableView.h */,
+				1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */,
+				1860AF3B1EDFBC4A00EC5232 /* CLDoctorHeadView.h */,
+				1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1073,7 +1093,9 @@
 				D43AFFD61ED7290600A04C03 /* CLChannelTableViewCell.m in Sources */,
 				D42E25EF1ECF3A3D002D3F7D /* CLShareObject.m in Sources */,
 				D42E26141ECFED71002D3F7D /* CLCommunityViewModel.m in Sources */,
+				1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */,
 				D42E25E51ECF38B9002D3F7D /* UIImageView+Avatar.m in Sources */,
+				1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */,
 				D40544551ED0254400C70B29 /* CLSelectSectionView.m in Sources */,
 				184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */,
 				D42E25EC1ECF3932002D3F7D /* CLUser.m in Sources */,
@@ -1091,11 +1113,13 @@
 				183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */,
 				D42E256C1ECF1D67002D3F7D /* main.m in Sources */,
 				184A76541ED44456004A132B /* CLMineSectionView.m in Sources */,
+				180A0E031EDED207006CBACD /* NSArray+Sudoku.m in Sources */,
 				D42E25CE1ECF2C28002D3F7D /* CLCommunityVC.m in Sources */,
 				D42E261A1ECFF12E002D3F7D /* CLChildCommunityViewModel.m in Sources */,
 				D405446F1ED1C8A100C70B29 /* CLCommentTableCell.m in Sources */,
 				184A763C1ED43744004A132B /* CLMineVC.m in Sources */,
 				D42E25F61ECFD126002D3F7D /* CLPageVC.m in Sources */,
+				1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */,
 				183C55481ED6FA0C002BF2B6 /* CLServiceViewModel.m in Sources */,
 				D42E25E01ECF31C9002D3F7D /* UIViewController+Extention.m in Sources */,
 				D405445F1ED0368D00C70B29 /* CLIntroductionBaseVC.m in Sources */,

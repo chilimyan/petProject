@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) FosterCareModel *fosterCareModel;
 
+- (void)configDoctorData:(FosterCareModel *)model;
+
 @end

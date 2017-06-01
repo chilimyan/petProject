@@ -74,7 +74,7 @@
      NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     CLChannelModel *channel = [[CLChannelModel alloc] init];
     channel.createName = @"爱你永不变";
-    channel.createPhoto = @"http://img2.imgtn.bdimg.com/it/u=4049571369,2234374785&fm=11&gp=0.jpg";
+    channel.createPhoto = @"http://i2.sanwen.net/doc/1608/704-160Q50U133.png";
     channel.imageUrls = @[@"32309AE9E06B00C1E40984FEF07C3C13.jpg"];
     channel.content = @"有很多人问我美女养这么大狗 你不害怕吗，我想这是你们对大型犬的一种误解，在我眼里它还是个孩子";
     channel.themeContent = @"#求关注#";
@@ -83,7 +83,7 @@
     
     CLChannelModel *channel1 = [[CLChannelModel alloc] init];
     channel1.createName = @"旺仔牛奶不是奶";
-    channel1.createPhoto = @"http://img3.imgtn.bdimg.com/it/u=513745235,939838858&fm=23&gp=0.jpg";
+    channel1.createPhoto = @"http://www.qqpk.cn/Article/UploadFiles/201108/20110812133832470.jpg";
     channel1.imageUrls = @[@"A2B2A36A846BF4065FAF03DEBA993422.jpg",@"6376BD7F91770FFE2EF9AAB3C32FBD9B.jpg",@"E6211B634112B60F1AD9FEC391D1D96A.jpg",@"E91BB40B71793FFCC5783428F562E564.jpg",@"8AFFFC0723FC0D56726926B5E04C1385.jpg",@"91467F5AD88F7DA0B5636164CCF23A06.jpg",@"70C97AE030710503B15AA9694993F4DF.jpg",@"BEEA1D51C3610CAFFE3D9FB86FF19D0C.jpg",@"435086D44A0211F394F07558DF61C302.jpg"];
     channel1.content = @"端午节快乐！";
     channel1.themeContent = @"#情有独“粽”#";
@@ -92,7 +92,7 @@
     
     CLChannelModel *channel2 = [[CLChannelModel alloc] init];
     channel2.createName = @"子小文";
-    channel2.createPhoto = @"http://img5.imgtn.bdimg.com/it/u=2061799849,1241098384&fm=23&gp=0.jpg";
+    channel2.createPhoto = @"http://diy.qqjay.com/u2/2012/0601/e2d1b828f5e7039d554dc1ed9bae3e91.jpg";
     channel2.imageUrls = @[@"78A7C90463B435BCC07F06AC5B210D55.jpg"];
     channel2.content = @"今晚用喷壶教训了他吃纸，结果小家伙还是抱着喷壶睡着了，不记仇哇！";
     channel2.themeContent = @"#他的奇葩睡姿#";
@@ -101,7 +101,7 @@
     
     CLChannelModel *channel3 = [[CLChannelModel alloc] init];
     channel3.createName = @"徐小胖";
-    channel3.createPhoto = @"http://imgtu.5011.net/uploads/content/20170406/5799851491450978.jpg";
+    channel3.createPhoto = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495432956650&di=45237573558ae70d6682fa0184e65913&imgtype=0&src=http%3A%2F%2Fimgs.daxi123.com%2F20160108%2Fsmalld5fefddf69773bfd651174ea76234aea1452224586.png";
     channel3.imageUrls = @[@"DA29B5D0C19AC558D7FDC5076E474BD8.jpg",@"E5DA662A3D3D4FA222092A0AD6933538.jpg",@"F2A70F9E9D4FBD499D932346A221D318.jpg",@"89F01C3E1C3DC463F9B2073CDDCFDE31.jpg"];
     channel3.content = @"朋友的🐱秀，养的太好啦！，再看看我的，叫我情何以堪。。";
     channel3.themeContent = @"";

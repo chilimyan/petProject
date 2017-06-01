@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"宠物服务";
     [self initView];
     [self.view addSubview:self.pagemenu.view];
     // Do any additional setup after loading the view.

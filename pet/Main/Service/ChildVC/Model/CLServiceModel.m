@@ -14,6 +14,11 @@
 
 @end
 
+@implementation CLDoctor
+
+
+@end
+
 @implementation CLServiceModel
 
 @end

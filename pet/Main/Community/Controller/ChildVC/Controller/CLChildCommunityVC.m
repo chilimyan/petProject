@@ -86,7 +86,7 @@ static CGFloat const selectSectionHeight = 10;
         [self.tableView setTableHeaderView:headView];
     }else{
         [_viewModel getSelectVCScrollImages:^{
-            CLChannelHeadView *headView = [[CLChannelHeadView alloc] initWithFrame:CGRectMake(0, 0, kScreen.width, 270) withImages:_viewModel.scrollImages];
+            CLChannelHeadView *headView = [[CLChannelHeadView alloc] initWithFrame:CGRectMake(0, 0, kScreen.width, 280) withImages:_viewModel.scrollImages];
             headView.sd_scrollViewDelegate = self;
             headView.channelList = [_viewModel getChannelHeadList];
             [self.tableView setTableHeaderView:headView];
@@ -131,10 +131,12 @@ static CGFloat const selectSectionHeight = 10;
 #pragma mark -scrollViewDelegate
 //禁止footView悬停
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-   CGRect rectInTableView = [self.tableView rectForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-     CGRect rect = [self.tableView convertRect:rectInTableView toView:self.tableView.superview];
-    if (rect.origin.y > -self.tableView.contentSize.height) {
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -selectSectionHeight + 49, 0);
+    if ([self.title isEqualToString:SELECT_TITLE]) {
+        CGRect rectInTableView = [self.tableView rectForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+        CGRect rect = [self.tableView convertRect:rectInTableView toView:self.tableView.superview];
+        if (rect.origin.y > -self.tableView.contentSize.height) {
+            self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -selectSectionHeight + 49, 0);
+        }
     }
 }
 
@@ -168,22 +170,26 @@ static CGFloat const selectSectionHeight = 10;
             CLSelectTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:selectTableCellIdentify forIndexPath:indexPath];
             CLSelectModel *model = _viewModel.selectList[indexPath.section];
             [cell setSelectModel:model];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }else{
             CLCommentTableCell *cell = [tableView dequeueReusableCellWithIdentifier:selectCommentCellIdentify forIndexPath:indexPath];
             CLSelectModel *model = _viewModel.selectList[indexPath.section];
             [cell setComment:model.comments[indexPath.row - 1]];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
         CLDynamicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicTableCellIdentify forIndexPath:indexPath];
         CLDynamicModel *model = _viewModel.dynamicList[indexPath.row];
         cell.model = model;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
         CLChannelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:channelCellIdentify forIndexPath:indexPath];
         CLChannelModel *model = _viewModel.channelList[indexPath.row];
         cell.channelModel = model;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
 }

@@ -20,6 +20,14 @@
 
 @end
 
+@interface CLDoctor : NSObject
+
+@property (nonatomic, copy) NSString *imageUrl;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, copy) NSString *postName;
+
+@end
+
 @interface CLServiceModel : NSObject
 
 @end

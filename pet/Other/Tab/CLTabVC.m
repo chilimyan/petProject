@@ -58,10 +58,12 @@
     UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
     
     UIViewController *vc3 = [[CLServiceVC alloc] init];
+    vc3.title = @"宠物服务";
     vc3.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"服务" image:[[UIImage imageNamed:@"service_desel_tab_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"service_sel_tab_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:vc3];
     
     UIViewController *vc4 = [[CLMineVC alloc] initWithStyle:UITableViewStyleGrouped];
+    vc4.title = @"个人中心";
     vc4.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的" image:[[UIImage imageNamed:@"my_desel_tab_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"my_sel_tab_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:vc4];
     

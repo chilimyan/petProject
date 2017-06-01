@@ -17,6 +17,40 @@
     }
 }
 
+- (void)getDoctorDataList:(void (^)())finished{
+    self.doctorList = [self getdoctorDataList];
+    if (finished) {
+        finished();
+    }
+}
+
+- (NSMutableArray *)getdoctorDataList{
+    NSMutableArray *tempArr = [NSMutableArray array];
+    CLDoctor *doctor = [[CLDoctor alloc] init];
+    doctor.imageUrl = @"医生01";
+    doctor.userName = @"朱天鹏";
+    doctor.postName = @"主治医生";
+    CLDoctor *doctor1 = [[CLDoctor alloc] init];
+    doctor1.imageUrl = @"医生02";
+    doctor1.userName = @"吴晓";
+    doctor1.postName = @"主治医生";
+    CLDoctor *doctor2 = [[CLDoctor alloc] init];
+    doctor2.imageUrl = @"医生03";
+    doctor2.userName = @"Andy";
+    doctor2.postName = @"主治医生";
+    CLDoctor *doctor3 = [[CLDoctor alloc] init];
+    doctor3.imageUrl = @"医生04";
+    doctor3.userName = @"刘慧";
+    doctor3.postName = @"主治医生";
+    
+    [tempArr addObject:doctor];
+    [tempArr addObject:doctor1];
+    [tempArr addObject:doctor2];
+    [tempArr addObject:doctor3];
+    
+    return tempArr;
+}
+
 - (NSMutableArray *)getServiceDataList{
     NSMutableArray *tempArr = [NSMutableArray array];
     FosterCareModel *model = [[FosterCareModel alloc] init];

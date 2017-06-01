@@ -38,6 +38,11 @@
 #define COLOR_GRAY [UIColor colorWithCSS:@"#a8a8a8"]
 /**
  
+ @return 浅黑色
+ */
+#define COLOR_BLACK_LIGHT [UIColor colorWithCSS:@"#515151"]
+/**
+ 
  @return 黑色
  */
 #define COLOR_BLACK [UIColor colorWithCSS:@"#2f2f2f"]

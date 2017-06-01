@@ -23,7 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"宠物服务";
     [self.view addSubview:self.pagemenu.view];
     [self.view addSubview:self.photoBtn];
     // Do any additional setup after loading the view.
