@@ -54,6 +54,7 @@
     if (!cell) {
         cell = [[CLServiceChildCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
         cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     FosterCareModel *model = self.dataArr[indexPath.row];
     [cell configDoctorData:model];

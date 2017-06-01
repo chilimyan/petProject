@@ -7,8 +7,11 @@
 //
 
 #import "CLMallVC.h"
+#import "CLMailSearchVC.h"
 
-@interface CLMallVC ()
+@interface CLMallVC ()<UISearchResultsUpdating, UISearchControllerDelegate>
+
+@property (nonatomic, strong) UISearchController *searchController;
 
 @end
 
@@ -16,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initView];
+    //固定搜索框
+    self.definesPresentationContext = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +30,51 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initView{
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"分类"] style:UIBarButtonItemStylePlain target:self action:@selector(typeClicked)];
+    self.navigationItem.leftBarButtonItem = leftBtn;
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
 }
-*/
+
+- (void)typeClicked{
+    
+}
+
+/**
+ *  UISearchResultsUpdating Delegate
+ **/
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    if (searchController.searchResultsController) {
+        CLMailSearchVC *vc = (CLMailSearchVC*)searchController.searchResultsController;
+    }
+}
+
+
+/**
+ 搜索条
+ 
+ @return <#return value description#>
+ */
+- (UISearchController *)searchController{
+    if (!_searchController) {
+        CLMailSearchVC *vc = [[CLMailSearchVC alloc] init];
+        _searchController = [[UISearchController alloc]initWithSearchResultsController:vc];
+        _searchController.searchBar.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width-12, 44);
+        _searchController.searchBar.placeholder = @"多尼斯牵引器";
+        _searchController.delegate = self;
+        _searchController.searchBar.barStyle = UIBarStyleBlack;
+        _searchController.searchResultsUpdater = self;
+        [_searchController.searchBar setContentMode:UIViewContentModeLeft];
+        [_searchController.searchBar setImage:[UIImage imageNamed:@"搜索"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
+        [_searchController.searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"Rectangle 16"] forState:UIControlStateNormal];
+        UITextField *searchField=[self.searchController.searchBar valueForKey:@"_searchField"];
+        [searchField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        _searchController.searchBar.backgroundColor = [UIColor clearColor];
+    }
+    return _searchController;
+}
+
+
 
 @end

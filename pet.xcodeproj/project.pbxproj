@@ -30,6 +30,7 @@
 		1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */; };
 		1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */; };
 		1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */; };
+		1860AF441EE021C300EC5232 /* CLMailSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF431EE021C300EC5232 /* CLMailSearchVC.m */; };
 		18700AC51ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */; };
 		18700AC71ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */; };
 		18700AC91ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */; };
@@ -152,6 +153,8 @@
 		1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDoctorHeadView.m; sourceTree = "<group>"; };
 		1860AF3E1EDFEE1400EC5232 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1860AF421EE021C300EC5232 /* CLMailSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMailSearchVC.h; sourceTree = "<group>"; };
+		1860AF431EE021C300EC5232 /* CLMailSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMailSearchVC.m; sourceTree = "<group>"; };
 		18700AC41ED827D5004AC634 /* 0B3C1A13016F1E515EE9740DAFA886AE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0B3C1A13016F1E515EE9740DAFA886AE.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/0B3C1A13016F1E515EE9740DAFA886AE.jpg; sourceTree = "<group>"; };
 		18700AC61ED827E4004AC634 /* 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/4B7E3D1CAF29FA1EB1C8822E3709BBAF.jpg; sourceTree = "<group>"; };
 		18700AC81ED827EA004AC634 /* 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; path = ../../../../../../../Library/Containers/com.tencent.qq/Data/Library/Caches/Images/5C7DBF7FE0C7816C4F2ADEF7E171A54E.jpg; sourceTree = "<group>"; };
@@ -327,6 +330,15 @@
 				183C55471ED6FA0C002BF2B6 /* CLServiceViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1860AF411EE0217A00EC5232 /* childVC */ = {
+			isa = PBXGroup;
+			children = (
+				1860AF421EE021C300EC5232 /* CLMailSearchVC.h */,
+				1860AF431EE021C300EC5232 /* CLMailSearchVC.m */,
+			);
+			path = childVC;
 			sourceTree = "<group>";
 		};
 		213EE8D801A987066CF50A73 /* Pods */ = {
@@ -666,6 +678,7 @@
 		D42E25BE1ECF2BDE002D3F7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1860AF411EE0217A00EC5232 /* childVC */,
 				D42E25D21ECF2C48002D3F7D /* CLMallVC.h */,
 				D42E25D31ECF2C48002D3F7D /* CLMallVC.m */,
 			);
@@ -1122,6 +1135,7 @@
 				1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */,
 				183C55481ED6FA0C002BF2B6 /* CLServiceViewModel.m in Sources */,
 				D42E25E01ECF31C9002D3F7D /* UIViewController+Extention.m in Sources */,
+				1860AF441EE021C300EC5232 /* CLMailSearchVC.m in Sources */,
 				D405445F1ED0368D00C70B29 /* CLIntroductionBaseVC.m in Sources */,
 				D42E26111ECFEB11002D3F7D /* CLChildCommunityVC.m in Sources */,
 				D42E25B21ECF2AF9002D3F7D /* CLTabVC.m in Sources */,
