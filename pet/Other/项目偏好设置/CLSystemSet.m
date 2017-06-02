@@ -48,7 +48,7 @@
     [[UISearchBar appearance] setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     
     //返回按钮图片
-    UIImage *backButtonImage = [[[UIImage imageNamed:@"nav_back_icon"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *backButtonImage = [[[UIImage imageNamed:@"返回按钮"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [[UINavigationBar appearance] setBackIndicatorImage:backButtonImage];
     [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backButtonImage];
     

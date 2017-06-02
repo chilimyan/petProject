@@ -27,6 +27,13 @@
 		184A764E1ED43C02004A132B /* CLMineShopingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A764D1ED43C02004A132B /* CLMineShopingCell.m */; };
 		184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76501ED43C11004A132B /* CLMineOtherCell.m */; };
 		184A76541ED44456004A132B /* CLMineSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A76531ED44456004A132B /* CLMineSectionView.m */; };
+		184C7DF61EE0F77900F0722A /* CLMallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7DF51EE0F77900F0722A /* CLMallViewModel.m */; };
+		184C7DF91EE0F9B600F0722A /* CLMallTopItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7DF81EE0F9B600F0722A /* CLMallTopItemView.m */; };
+		184C7DFC1EE109A000F0722A /* CLMallHotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7DFB1EE109A000F0722A /* CLMallHotView.m */; };
+		184C7DFE1EE112E100F0722A /* timg-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 184C7DFD1EE112E100F0722A /* timg-2.jpeg */; };
+		184C7E061EE14C1B00F0722A /* CLLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7E041EE14C1B00F0722A /* CLLoginVC.m */; };
+		184C7E091EE14C3A00F0722A /* CLLoginFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7E081EE14C3A00F0722A /* CLLoginFootView.m */; };
+		184C7E0C1EE15DD100F0722A /* CLLoginTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C7E0B1EE15DD100F0722A /* CLLoginTableCell.m */; };
 		1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */; };
 		1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3C1EDFBC4A00EC5232 /* CLDoctorHeadView.m */; };
 		1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860AF3F1EDFEE1400EC5232 /* UIView+Extension.m */; };
@@ -147,6 +154,19 @@
 		184A76501ED43C11004A132B /* CLMineOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineOtherCell.m; sourceTree = "<group>"; };
 		184A76521ED44456004A132B /* CLMineSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMineSectionView.h; sourceTree = "<group>"; };
 		184A76531ED44456004A132B /* CLMineSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineSectionView.m; sourceTree = "<group>"; };
+		184C7DF41EE0F77900F0722A /* CLMallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMallViewModel.h; sourceTree = "<group>"; };
+		184C7DF51EE0F77900F0722A /* CLMallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMallViewModel.m; sourceTree = "<group>"; };
+		184C7DF71EE0F9B600F0722A /* CLMallTopItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMallTopItemView.h; sourceTree = "<group>"; };
+		184C7DF81EE0F9B600F0722A /* CLMallTopItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMallTopItemView.m; sourceTree = "<group>"; };
+		184C7DFA1EE109A000F0722A /* CLMallHotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMallHotView.h; sourceTree = "<group>"; };
+		184C7DFB1EE109A000F0722A /* CLMallHotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMallHotView.m; sourceTree = "<group>"; };
+		184C7DFD1EE112E100F0722A /* timg-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-2.jpeg"; sourceTree = "<group>"; };
+		184C7E031EE14C1B00F0722A /* CLLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginVC.h; sourceTree = "<group>"; };
+		184C7E041EE14C1B00F0722A /* CLLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginVC.m; sourceTree = "<group>"; };
+		184C7E071EE14C3A00F0722A /* CLLoginFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginFootView.h; sourceTree = "<group>"; };
+		184C7E081EE14C3A00F0722A /* CLLoginFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginFootView.m; sourceTree = "<group>"; };
+		184C7E0A1EE15DD100F0722A /* CLLoginTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginTableCell.h; sourceTree = "<group>"; };
+		184C7E0B1EE15DD100F0722A /* CLLoginTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginTableCell.m; sourceTree = "<group>"; };
 		1860AF381EDFBC3200EC5232 /* CLDoctorTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDoctorTableView.h; sourceTree = "<group>"; };
 		1860AF391EDFBC3200EC5232 /* CLDoctorTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDoctorTableView.m; sourceTree = "<group>"; };
 		1860AF3B1EDFBC4A00EC5232 /* CLDoctorHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDoctorHeadView.h; sourceTree = "<group>"; };
@@ -332,6 +352,26 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		184C7E021EE14C1B00F0722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184C7E031EE14C1B00F0722A /* CLLoginVC.h */,
+				184C7E041EE14C1B00F0722A /* CLLoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184C7E051EE14C1B00F0722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184C7E071EE14C3A00F0722A /* CLLoginFootView.h */,
+				184C7E081EE14C3A00F0722A /* CLLoginFootView.m */,
+				184C7E0A1EE15DD100F0722A /* CLLoginTableCell.h */,
+				184C7E0B1EE15DD100F0722A /* CLLoginTableCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1860AF411EE0217A00EC5232 /* childVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,6 +538,8 @@
 		D42E25A11ECF228E002D3F7D /* login */ = {
 			isa = PBXGroup;
 			children = (
+				184C7E021EE14C1B00F0722A /* Controller */,
+				184C7E051EE14C1B00F0722A /* View */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -512,6 +554,7 @@
 		D42E25A31ECF228E002D3F7D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				184C7DFD1EE112E100F0722A /* timg-2.jpeg */,
 				183C55491ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png */,
 				183C554A1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png */,
 				183C554B1ED6FD08002BF2B6 /* Rectangle 4 Copy@2x.png */,
@@ -695,6 +738,10 @@
 		D42E25C01ECF2BDE002D3F7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184C7DF71EE0F9B600F0722A /* CLMallTopItemView.h */,
+				184C7DF81EE0F9B600F0722A /* CLMallTopItemView.m */,
+				184C7DFA1EE109A000F0722A /* CLMallHotView.h */,
+				184C7DFB1EE109A000F0722A /* CLMallHotView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -702,6 +749,8 @@
 		D42E25C11ECF2BDE002D3F7D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				184C7DF41EE0F77900F0722A /* CLMallViewModel.h */,
+				184C7DF51EE0F77900F0722A /* CLMallViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -945,7 +994,8 @@
 				TargetAttributes = {
 					D42E25661ECF1D67002D3F7D = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 9V3DFWE4TZ;
+						ProvisioningStyle = Manual;
 					};
 					D42E257F1ECF1D67002D3F7D = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1019,6 +1069,7 @@
 				18700ADF1ED8282E004AC634 /* 70C97AE030710503B15AA9694993F4DF.jpg in Resources */,
 				D40544671ED0585300C70B29 /* 5345651BD274DFFB326F6C016FAAF45F.jpg in Resources */,
 				18700ACB1ED827F1004AC634 /* DA29B5D0C19AC558D7FDC5076E474BD8.jpg in Resources */,
+				184C7DFE1EE112E100F0722A /* timg-2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,9 +1144,11 @@
 			files = (
 				183C55371ED6AE0F002BF2B6 /* CLMenuItem.m in Sources */,
 				D42E25E61ECF38B9002D3F7D /* UIViewController+BackButtonHandle.m in Sources */,
+				184C7DF91EE0F9B600F0722A /* CLMallTopItemView.m in Sources */,
 				184A764B1ED43BF3004A132B /* CLMineDailyManagerCell.m in Sources */,
 				D42E25E91ECF38CF002D3F7D /* UIImage+Extension.m in Sources */,
 				D42E25F31ECFD11D002D3F7D /* CAPSPageMenu.m in Sources */,
+				184C7E091EE14C3A00F0722A /* CLLoginFootView.m in Sources */,
 				184A76481ED43BE1004A132B /* CLMinePersonCenterCell.m in Sources */,
 				D405445C1ED0360D00C70B29 /* CLIntroductionVC.m in Sources */,
 				184A764E1ED43C02004A132B /* CLMineShopingCell.m in Sources */,
@@ -1113,20 +1166,24 @@
 				184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */,
 				D42E25EC1ECF3932002D3F7D /* CLUser.m in Sources */,
 				D42E25DF1ECF31C9002D3F7D /* NSString+CLStringTools.m in Sources */,
+				184C7E061EE14C1B00F0722A /* CLLoginVC.m in Sources */,
 				D42E256F1ECF1D67002D3F7D /* AppDelegate.m in Sources */,
 				184A762D1ED3E3EA004A132B /* CLChannelHeadView.m in Sources */,
 				D42E25A91ECF26AF002D3F7D /* CLSystemSet.m in Sources */,
 				D42E25D41ECF2C48002D3F7D /* CLMallVC.m in Sources */,
+				184C7E0C1EE15DD100F0722A /* CLLoginTableCell.m in Sources */,
 				D42E261D1ECFF144002D3F7D /* CLCommunityModel.m in Sources */,
 				188897E01ED2844D00125AFF /* CLDynamicTableViewCell.m in Sources */,
 				184A762A1ED3D748004A132B /* CLDynamicHeadView.m in Sources */,
 				D42E25DA1ECF2C69002D3F7D /* CLServiceVC.m in Sources */,
+				184C7DFC1EE109A000F0722A /* CLMallHotView.m in Sources */,
 				D42E26171ECFEE66002D3F7D /* CLSelectHeadView.m in Sources */,
 				18700AF01ED82ED1004AC634 /* CLChannelImagesView.m in Sources */,
 				183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */,
 				D42E256C1ECF1D67002D3F7D /* main.m in Sources */,
 				184A76541ED44456004A132B /* CLMineSectionView.m in Sources */,
 				180A0E031EDED207006CBACD /* NSArray+Sudoku.m in Sources */,
+				184C7DF61EE0F77900F0722A /* CLMallViewModel.m in Sources */,
 				D42E25CE1ECF2C28002D3F7D /* CLCommunityVC.m in Sources */,
 				D42E261A1ECFF12E002D3F7D /* CLChildCommunityViewModel.m in Sources */,
 				D405446F1ED1C8A100C70B29 /* CLCommentTableCell.m in Sources */,
@@ -1286,13 +1343,19 @@
 			baseConfigurationReference = 3336EBFE8980394B461A17D1 /* Pods-pet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 9V3DFWE4TZ;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/pet/Other/PetPrefixHeader.pch;
 				INFOPLIST_FILE = pet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chilim.pet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honghai.homeRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d9a916ef-e641-4727-8e0e-89e3543a1fda";
+				PROVISIONING_PROFILE_SPECIFIER = home_rentNew_dis;
 			};
 			name = Debug;
 		};
@@ -1301,13 +1364,18 @@
 			baseConfigurationReference = 68CEA7EB5927C86A17DCDF02 /* Pods-pet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Honghai Network Technology Development Co.,Ltd.";
+				DEVELOPMENT_TEAM = 9V3DFWE4TZ;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/pet/Other/PetPrefixHeader.pch;
 				INFOPLIST_FILE = pet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chilim.pet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honghai.homeRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d9a916ef-e641-4727-8e0e-89e3543a1fda";
+				PROVISIONING_PROFILE_SPECIFIER = home_rentNew_dis;
 			};
 			name = Release;
 		};

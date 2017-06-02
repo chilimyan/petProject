@@ -7,6 +7,7 @@
 //
 
 #import "CLIntroductionVC.h"
+#import "CLLoginVC.h"
 
 @interface CLIntroductionVC ()
 
@@ -49,7 +50,14 @@
 }
 
 - (void)loginClicked{
-    [self.view removeFromSuperview];
+    UINavigationController *root = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+
+    CLLoginVC *loginVC = [[CLLoginVC alloc] initWithStyle:UITableViewStyleGrouped];
+    [root presentViewController:[[UINavigationController alloc] initWithRootViewController:loginVC] animated:YES completion:^{
+    }];
+    loginVC.loginBlock = ^{
+        [self.view removeFromSuperview];
+    };
 }
 
 - (UIButton *)loginBtn{
