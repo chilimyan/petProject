@@ -133,15 +133,15 @@
         make.left.mas_equalTo(weakSelf.contentView.mas_left).mas_offset(0);
         make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(0);
         make.top.mas_equalTo(weakSelf.contentView.mas_top).mas_offset(0);
-        make.bottom.mas_equalTo(weakSelf.contentLabel.mas_top).mas_offset(-10);
+        make.height.mas_equalTo(1);
     }];
     [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make){
+        make.top.mas_equalTo(_iconView.mas_bottom).mas_offset(10);
         make.left.mas_equalTo(weakSelf.contentView.mas_left).mas_offset(10);
         make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(-10);
         make.bottom.mas_equalTo(weakSelf.likeView.mas_top).mas_equalTo(-10);
     }];
     [_likeView mas_makeConstraints:^(MASConstraintMaker *make){
-        make.width.mas_equalTo(kScreen.width);
         make.height.mas_equalTo(28);
         make.left.mas_equalTo(weakSelf.contentView.mas_left).mas_equalTo(0);
         make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_equalTo(0);
@@ -149,7 +149,6 @@
     }];
     [_tagView mas_makeConstraints:^(MASConstraintMaker *make){
         make.height.mas_equalTo(30);
-        make.width.mas_equalTo(kScreen.width);
         make.left.mas_equalTo(weakSelf.contentView.mas_left).mas_offset(0);
         make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(0);
         make.bottom.mas_equalTo(weakSelf.contentView.mas_bottom).mas_offset(-10);
@@ -176,6 +175,19 @@
         make.topMargin.mas_equalTo(10);
     }];
 }
+//"<MASLayoutConstraint:0x6080000b7b20 UIImageView:0x7ffaea536750.top == UITableViewCellContentView:0x7ffaea535f10.top>",
+//"<MASLayoutConstraint:0x6080000b7be0 UIImageView:0x7ffaea536750.bottom == YYLabel:0x7ffaea536930.top - 10>",
+//"<MASLayoutConstraint:0x6080000b7fa0 YYLabel:0x7ffaea536930.bottom == UICollectionView:0x7ffaec028000.top - 10>",
+//"<MASLayoutConstraint:0x6080000b8360 UICollectionView:0x7ffaec028000.height == 28>",
+//"<MASLayoutConstraint:0x6080000b8540 UICollectionView:0x7ffaec028000.bottom == UIView:0x7ffaea42aa80.top - 6>",
+//"<MASLayoutConstraint:0x6080000b87e0 UIView:0x7ffaea42aa80.height == 30>",
+//"<MASLayoutConstraint:0x6080000b8a80 UIView:0x7ffaea42aa80.bottom == UITableViewCellContentView:0x7ffaea535f10.bottom - 10>",
+//"<MASLayoutConstraint:0x6000000b8120 UIImageView:0x7ffaea536750.height == 491.848>",
+//"<NSLayoutConstraint:0x600000090c20 UITableViewCellContentView:0x7ffaea535f10.height == 360.5>"
+//)
+//
+//Will attempt to recover by breaking constraint
+//<MASLayoutConstraint:0x6000000b8120 UIImageView:0x7ffaea536750.height == 491.848>
 
 - (void)setSelectModel:(CLSelectModel *)selectModel{
     _iconView.image = [UIImage imageNamed:selectModel.imageUrls[0]];
