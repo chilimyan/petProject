@@ -10,4 +10,6 @@
 
 @interface CLMailSearchVC : UITableViewController
 
+- (void)reloadKeyList:(NSString *)searchkey;
+
 @end

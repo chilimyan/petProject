@@ -10,4 +10,7 @@
 
 @interface CLChildCommunityVC : UITableViewController
 
+@property (nonatomic, weak) UIViewController *parentVC;
+
+
 @end

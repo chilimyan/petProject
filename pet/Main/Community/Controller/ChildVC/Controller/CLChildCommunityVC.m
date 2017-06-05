@@ -18,6 +18,8 @@
 #import "CLDynamicHeadView.h"
 #import "CLChannelHeadView.h"
 #import "CLChannelTableViewCell.h"
+#import "CLWebViewVC.h"
+#import "CLCommunityDetailVC.h"
 
 static NSString *const selectTableCellIdentify = @"selectTableCellIdentify";
 static NSString *const dynamicTableCellIdentify = @"dynamicTableCellIdentify";
@@ -103,7 +105,7 @@ static CGFloat const selectSectionHeight = 10;
         
         dispatch_after(delayTime, dispatch_get_main_queue(), ^{
             [self.tableView.mj_header endRefreshing];
-            [self.tableView.mj_footer resetNoMoreData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
         });
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
         [_viewModel getDynamicDataList:^{
@@ -113,7 +115,7 @@ static CGFloat const selectSectionHeight = 10;
         
         dispatch_after(delayTime, dispatch_get_main_queue(), ^{
             [self.tableView.mj_header endRefreshing];
-            [self.tableView.mj_footer resetNoMoreData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
         });
     }else{
         [_viewModel getChannelDataList:^{
@@ -123,7 +125,7 @@ static CGFloat const selectSectionHeight = 10;
         
         dispatch_after(delayTime, dispatch_get_main_queue(), ^{
             [self.tableView.mj_header endRefreshing];
-            [self.tableView.mj_footer resetNoMoreData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
         });
     }
 }
@@ -269,8 +271,10 @@ static CGFloat const selectSectionHeight = 10;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self.title isEqualToString:SELECT_TITLE]) {
-        
-        
+        CLSelectModel *model = _viewModel.selectList[indexPath.section];
+        CLCommunityDetailVC *detailVC = [[CLCommunityDetailVC alloc] init];
+        detailVC.hidesBottomBarWhenPushed = YES;
+        [self.parentVC.navigationController pushViewController:detailVC animated:YES];
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
         
     }else{
@@ -280,7 +284,11 @@ static CGFloat const selectSectionHeight = 10;
 
 /** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
-    
+    CLWebViewVC *webVC = [[CLWebViewVC alloc] init];
+    webVC.hidesBottomBarWhenPushed = YES;
+    webVC.title = @"萌宠读心术：测测你的心理年龄";
+    webVC.urlString = @"http://www.yc.cn/app/topic/childrensday/index.html?petShareFrom=3";
+    [self.parentVC.navigationController pushViewController:webVC animated:YES];
 }
 
 @end

@@ -21,5 +21,6 @@ pod 'SDCycleScrollView','~> 1.64'
 pod 'TTTAttributedLabel'
 pod 'YYText'
 pod 'UITableView+FDTemplateLayoutCell'
+pod 'DZNEmptyDataSet'
 end
 

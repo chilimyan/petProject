@@ -61,6 +61,17 @@
 		18700AED1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18700AEC1ED82A2B004AC634 /* 32309AE9E06B00C1E40984FEF07C3C13.jpg */; };
 		18700AF01ED82ED1004AC634 /* CLChannelImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */; };
 		188897E01ED2844D00125AFF /* CLDynamicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188897DF1ED2844D00125AFF /* CLDynamicTableViewCell.m */; };
+		189B4CE21EE4F000006A6F30 /* CLWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CE11EE4F000006A6F30 /* CLWebViewVC.m */; };
+		189B4CE61EE50E27006A6F30 /* CLProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CE51EE50E27006A6F30 /* CLProgressLayer.m */; };
+		189B4CE91EE540E8006A6F30 /* CLCommunityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CE81EE540E8006A6F30 /* CLCommunityDetailVC.m */; };
+		189B4CEF1EE5542A006A6F30 /* CLBaiduOCRVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CEE1EE5542A006A6F30 /* CLBaiduOCRVC.m */; };
+		189B4CF11EE55AF4006A6F30 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189B4CF01EE55AF4006A6F30 /* AipBase.framework */; };
+		189B4CF21EE55AF4006A6F30 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 189B4CF01EE55AF4006A6F30 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		189B4CF51EE55D21006A6F30 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = 189B4CF41EE55D21006A6F30 /* aip.license */; };
+		189B4CF91EE55EE1006A6F30 /* AipOcrService.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CF81EE55EE1006A6F30 /* AipOcrService.m */; };
+		189B4CFC1EE5658B006A6F30 /* AipCaptureCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CFB1EE5658B006A6F30 /* AipCaptureCardVC.m */; };
+		189B4CFF1EE5782C006A6F30 /* CLCommunityDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CFE1EE5782C006A6F30 /* CLCommunityDetailTableView.m */; };
+		189B4D021EE57DDA006A6F30 /* CLDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4D011EE57DDA006A6F30 /* CLDetailTableCell.m */; };
 		614B62B4636A91CE374D7A9F /* libPods-pet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09A619C440B93D13D65305C /* libPods-pet.a */; };
 		D40544551ED0254400C70B29 /* CLSelectSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40544541ED0254400C70B29 /* CLSelectSectionView.m */; };
 		D405445C1ED0360D00C70B29 /* CLIntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D405445B1ED0360D00C70B29 /* CLIntroductionVC.m */; };
@@ -118,6 +129,20 @@
 			remoteInfo = pet;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		189B4CF31EE55AF4006A6F30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				189B4CF21EE55AF4006A6F30 /* AipBase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		180A0E011EDED207006CBACD /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
@@ -200,6 +225,25 @@
 		18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLChannelImagesView.m; sourceTree = "<group>"; };
 		188897DE1ED2844D00125AFF /* CLDynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDynamicTableViewCell.h; sourceTree = "<group>"; };
 		188897DF1ED2844D00125AFF /* CLDynamicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDynamicTableViewCell.m; sourceTree = "<group>"; };
+		189B4CE01EE4F000006A6F30 /* CLWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWebViewVC.h; sourceTree = "<group>"; };
+		189B4CE11EE4F000006A6F30 /* CLWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWebViewVC.m; sourceTree = "<group>"; };
+		189B4CE41EE50E27006A6F30 /* CLProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLProgressLayer.h; sourceTree = "<group>"; };
+		189B4CE51EE50E27006A6F30 /* CLProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLProgressLayer.m; sourceTree = "<group>"; };
+		189B4CE71EE540E8006A6F30 /* CLCommunityDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommunityDetailVC.h; sourceTree = "<group>"; };
+		189B4CE81EE540E8006A6F30 /* CLCommunityDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCommunityDetailVC.m; sourceTree = "<group>"; };
+		189B4CED1EE5542A006A6F30 /* CLBaiduOCRVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBaiduOCRVC.h; sourceTree = "<group>"; };
+		189B4CEE1EE5542A006A6F30 /* CLBaiduOCRVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBaiduOCRVC.m; sourceTree = "<group>"; };
+		189B4CF01EE55AF4006A6F30 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		189B4CF41EE55D21006A6F30 /* aip.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aip.license; sourceTree = "<group>"; };
+		189B4CF61EE55EBE006A6F30 /* AipOcrDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AipOcrDelegate.h; sourceTree = "<group>"; };
+		189B4CF71EE55EE1006A6F30 /* AipOcrService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AipOcrService.h; sourceTree = "<group>"; };
+		189B4CF81EE55EE1006A6F30 /* AipOcrService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AipOcrService.m; sourceTree = "<group>"; };
+		189B4CFA1EE5658B006A6F30 /* AipCaptureCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AipCaptureCardVC.h; sourceTree = "<group>"; };
+		189B4CFB1EE5658B006A6F30 /* AipCaptureCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AipCaptureCardVC.m; sourceTree = "<group>"; };
+		189B4CFD1EE5782C006A6F30 /* CLCommunityDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommunityDetailTableView.h; sourceTree = "<group>"; };
+		189B4CFE1EE5782C006A6F30 /* CLCommunityDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCommunityDetailTableView.m; sourceTree = "<group>"; };
+		189B4D001EE57DDA006A6F30 /* CLDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDetailTableCell.h; sourceTree = "<group>"; };
+		189B4D011EE57DDA006A6F30 /* CLDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDetailTableCell.m; sourceTree = "<group>"; };
 		3336EBFE8980394B461A17D1 /* Pods-pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pet/Pods-pet.debug.xcconfig"; sourceTree = "<group>"; };
 		68CEA7EB5927C86A17DCDF02 /* Pods-pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pet.release.xcconfig"; path = "Pods/Target Support Files/Pods-pet/Pods-pet.release.xcconfig"; sourceTree = "<group>"; };
 		A09A619C440B93D13D65305C /* libPods-pet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189B4CF11EE55AF4006A6F30 /* AipBase.framework in Frameworks */,
 				614B62B4636A91CE374D7A9F /* libPods-pet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +426,29 @@
 			path = childVC;
 			sourceTree = "<group>";
 		};
+		189B4CE31EE50DD6006A6F30 /* 进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				189B4CE41EE50E27006A6F30 /* CLProgressLayer.h */,
+				189B4CE51EE50E27006A6F30 /* CLProgressLayer.m */,
+			);
+			path = "进度条";
+			sourceTree = "<group>";
+		};
+		189B4CEC1EE553DC006A6F30 /* 百度OCR */ = {
+			isa = PBXGroup;
+			children = (
+				189B4CED1EE5542A006A6F30 /* CLBaiduOCRVC.h */,
+				189B4CEE1EE5542A006A6F30 /* CLBaiduOCRVC.m */,
+				189B4CF61EE55EBE006A6F30 /* AipOcrDelegate.h */,
+				189B4CF71EE55EE1006A6F30 /* AipOcrService.h */,
+				189B4CF81EE55EE1006A6F30 /* AipOcrService.m */,
+				189B4CFA1EE5658B006A6F30 /* AipCaptureCardVC.h */,
+				189B4CFB1EE5658B006A6F30 /* AipCaptureCardVC.m */,
+			);
+			path = "百度OCR";
+			sourceTree = "<group>";
+		};
 		213EE8D801A987066CF50A73 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +461,7 @@
 		3B284660086568FF8091C43C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189B4CF01EE55AF4006A6F30 /* AipBase.framework */,
 				A09A619C440B93D13D65305C /* libPods-pet.a */,
 			);
 			name = Frameworks;
@@ -513,6 +582,8 @@
 		D42E259F1ECF228E002D3F7D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				189B4CEC1EE553DC006A6F30 /* 百度OCR */,
+				189B4CE31EE50DD6006A6F30 /* 进度条 */,
 				D40544591ED0335700C70B29 /* 引导页 */,
 				D42E25AF1ECF2ADD002D3F7D /* Tab */,
 				D42E25A61ECF2693002D3F7D /* 项目偏好设置 */,
@@ -524,6 +595,8 @@
 				D42E25ED1ECF3A3D002D3F7D /* CLShareObject.h */,
 				D42E25EE1ECF3A3D002D3F7D /* CLShareObject.m */,
 				D42E25F71ECFD203002D3F7D /* CLUntil.h */,
+				189B4CE01EE4F000006A6F30 /* CLWebViewVC.h */,
+				189B4CE11EE4F000006A6F30 /* CLWebViewVC.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -554,6 +627,7 @@
 		D42E25A31ECF228E002D3F7D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				189B4CF41EE55D21006A6F30 /* aip.license */,
 				184C7DFD1EE112E100F0722A /* timg-2.jpeg */,
 				183C55491ED6FD08002BF2B6 /* Rectangle 4 Copy 2@2x.png */,
 				183C554A1ED6FD08002BF2B6 /* Rectangle 4 Copy 2@3x.png */,
@@ -877,6 +951,8 @@
 			children = (
 				D42E260F1ECFEB11002D3F7D /* CLChildCommunityVC.h */,
 				D42E26101ECFEB11002D3F7D /* CLChildCommunityVC.m */,
+				189B4CE71EE540E8006A6F30 /* CLCommunityDetailVC.h */,
+				189B4CE81EE540E8006A6F30 /* CLCommunityDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -911,6 +987,10 @@
 				D43AFFD51ED7290600A04C03 /* CLChannelTableViewCell.m */,
 				18700AEE1ED82ED1004AC634 /* CLChannelImagesView.h */,
 				18700AEF1ED82ED1004AC634 /* CLChannelImagesView.m */,
+				189B4CFD1EE5782C006A6F30 /* CLCommunityDetailTableView.h */,
+				189B4CFE1EE5782C006A6F30 /* CLCommunityDetailTableView.m */,
+				189B4D001EE57DDA006A6F30 /* CLDetailTableCell.h */,
+				189B4D011EE57DDA006A6F30 /* CLDetailTableCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -931,12 +1011,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D42E25941ECF1D67002D3F7D /* Build configuration list for PBXNativeTarget "pet" */;
 			buildPhases = (
-				53A4E854EF4081230C17A3A8 /* 📦 Check Pods Manifest.lock */,
+				53A4E854EF4081230C17A3A8 /* [CP] Check Pods Manifest.lock */,
 				D42E25631ECF1D67002D3F7D /* Sources */,
 				D42E25641ECF1D67002D3F7D /* Frameworks */,
 				D42E25651ECF1D67002D3F7D /* Resources */,
-				A9005F6A6667886D2F3BB937 /* 📦 Embed Pods Frameworks */,
-				7B47DB61A82C2302D98FBAC8 /* 📦 Copy Pods Resources */,
+				A9005F6A6667886D2F3BB937 /* [CP] Embed Pods Frameworks */,
+				7B47DB61A82C2302D98FBAC8 /* [CP] Copy Pods Resources */,
+				189B4CF31EE55AF4006A6F30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1035,6 +1116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40544691ED0585900C70B29 /* 2B18C2D4941421681BD6B9FBCEC48C2D.jpg in Resources */,
+				189B4CF51EE55D21006A6F30 /* aip.license in Resources */,
 				18700AE91ED8284A004AC634 /* B0CDB5DC5B73E8F92EF6A887E402C506.jpg in Resources */,
 				18700AD91ED8281E004AC634 /* E91BB40B71793FFCC5783428F562E564.jpg in Resources */,
 				183C55541ED6FD08002BF2B6 /* Rectangle 4@3x.png in Resources */,
@@ -1090,29 +1172,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		53A4E854EF4081230C17A3A8 /* 📦 Check Pods Manifest.lock */ = {
+		53A4E854EF4081230C17A3A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7B47DB61A82C2302D98FBAC8 /* 📦 Copy Pods Resources */ = {
+		7B47DB61A82C2302D98FBAC8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1120,14 +1202,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pet/Pods-pet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9005F6A6667886D2F3BB937 /* 📦 Embed Pods Frameworks */ = {
+		A9005F6A6667886D2F3BB937 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1146,7 +1228,9 @@
 				D42E25E61ECF38B9002D3F7D /* UIViewController+BackButtonHandle.m in Sources */,
 				184C7DF91EE0F9B600F0722A /* CLMallTopItemView.m in Sources */,
 				184A764B1ED43BF3004A132B /* CLMineDailyManagerCell.m in Sources */,
+				189B4CF91EE55EE1006A6F30 /* AipOcrService.m in Sources */,
 				D42E25E91ECF38CF002D3F7D /* UIImage+Extension.m in Sources */,
+				189B4CFC1EE5658B006A6F30 /* AipCaptureCardVC.m in Sources */,
 				D42E25F31ECFD11D002D3F7D /* CAPSPageMenu.m in Sources */,
 				184C7E091EE14C3A00F0722A /* CLLoginFootView.m in Sources */,
 				184A76481ED43BE1004A132B /* CLMinePersonCenterCell.m in Sources */,
@@ -1161,6 +1245,7 @@
 				D42E26141ECFED71002D3F7D /* CLCommunityViewModel.m in Sources */,
 				1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */,
 				D42E25E51ECF38B9002D3F7D /* UIImageView+Avatar.m in Sources */,
+				189B4CE21EE4F000006A6F30 /* CLWebViewVC.m in Sources */,
 				1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */,
 				D40544551ED0254400C70B29 /* CLSelectSectionView.m in Sources */,
 				184A76511ED43C11004A132B /* CLMineOtherCell.m in Sources */,
@@ -1171,6 +1256,7 @@
 				184A762D1ED3E3EA004A132B /* CLChannelHeadView.m in Sources */,
 				D42E25A91ECF26AF002D3F7D /* CLSystemSet.m in Sources */,
 				D42E25D41ECF2C48002D3F7D /* CLMallVC.m in Sources */,
+				189B4CFF1EE5782C006A6F30 /* CLCommunityDetailTableView.m in Sources */,
 				184C7E0C1EE15DD100F0722A /* CLLoginTableCell.m in Sources */,
 				D42E261D1ECFF144002D3F7D /* CLCommunityModel.m in Sources */,
 				188897E01ED2844D00125AFF /* CLDynamicTableViewCell.m in Sources */,
@@ -1178,15 +1264,19 @@
 				D42E25DA1ECF2C69002D3F7D /* CLServiceVC.m in Sources */,
 				184C7DFC1EE109A000F0722A /* CLMallHotView.m in Sources */,
 				D42E26171ECFEE66002D3F7D /* CLSelectHeadView.m in Sources */,
+				189B4CE61EE50E27006A6F30 /* CLProgressLayer.m in Sources */,
 				18700AF01ED82ED1004AC634 /* CLChannelImagesView.m in Sources */,
 				183C55571ED70281002BF2B6 /* CLServiceModel.m in Sources */,
+				189B4CEF1EE5542A006A6F30 /* CLBaiduOCRVC.m in Sources */,
 				D42E256C1ECF1D67002D3F7D /* main.m in Sources */,
 				184A76541ED44456004A132B /* CLMineSectionView.m in Sources */,
 				180A0E031EDED207006CBACD /* NSArray+Sudoku.m in Sources */,
 				184C7DF61EE0F77900F0722A /* CLMallViewModel.m in Sources */,
 				D42E25CE1ECF2C28002D3F7D /* CLCommunityVC.m in Sources */,
 				D42E261A1ECFF12E002D3F7D /* CLChildCommunityViewModel.m in Sources */,
+				189B4D021EE57DDA006A6F30 /* CLDetailTableCell.m in Sources */,
 				D405446F1ED1C8A100C70B29 /* CLCommentTableCell.m in Sources */,
+				189B4CE91EE540E8006A6F30 /* CLCommunityDetailVC.m in Sources */,
 				184A763C1ED43744004A132B /* CLMineVC.m in Sources */,
 				D42E25F61ECFD126002D3F7D /* CLPageVC.m in Sources */,
 				1860AF3D1EDFBC4A00EC5232 /* CLDoctorHeadView.m in Sources */,
@@ -1347,6 +1437,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 9V3DFWE4TZ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/pet/Other/PetPrefixHeader.pch;
 				INFOPLIST_FILE = pet/Info.plist;
@@ -1367,6 +1461,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Honghai Network Technology Development Co.,Ltd.";
 				DEVELOPMENT_TEAM = 9V3DFWE4TZ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/pet/Other/PetPrefixHeader.pch;
 				INFOPLIST_FILE = pet/Info.plist;

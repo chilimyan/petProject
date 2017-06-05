@@ -56,6 +56,7 @@
             {
                 CLChildCommunityVC *vc = [[CLChildCommunityVC alloc]initWithStyle:UITableViewStylePlain];
                 vc.title = SELECT_TITLE;
+                vc.parentVC = self;
                 [self.controllerArray addObject:vc];
             }
                 break;
@@ -63,6 +64,7 @@
             {
                 CLChildCommunityVC *vc = [[CLChildCommunityVC alloc]initWithStyle:UITableViewStyleGrouped];
                 vc.title = DYNAMIC_TITLE;
+                vc.parentVC = self;
                 [self.controllerArray addObject:vc];
             }
                 break;
@@ -70,6 +72,7 @@
             {
                 CLChildCommunityVC *vc = [[CLChildCommunityVC alloc]initWithStyle:UITableViewStyleGrouped];
                 vc.title = CHANNEL_TITLE;
+                vc.parentVC = self;
                 [self.controllerArray addObject:vc];
             }
                 break;

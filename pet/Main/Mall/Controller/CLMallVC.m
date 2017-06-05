@@ -31,8 +31,6 @@
     [super viewDidLoad];
     _viewModel = [[CLMallViewModel alloc] init];
     [self initView];
-    //固定搜索框
-    self.definesPresentationContext = YES;
     [self loadData];
     // Do any additional setup after loading the view.
 }
@@ -100,8 +98,18 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     if (searchController.searchResultsController) {
         CLMailSearchVC *vc = (CLMailSearchVC*)searchController.searchResultsController;
+        [vc reloadKeyList:searchController.searchBar.text];
     }
 }
+
+-(void)willDismissSearchController:(UISearchController *)searchController {
+    self.tabBarController.tabBar.hidden = NO;
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    self.tabBarController.tabBar.hidden = YES;
+}
+
 
 - (SDCycleScrollView *)cycleScrollView{
     if (!_cycleScrollView) {
@@ -136,7 +144,7 @@
  */
 - (UISearchController *)searchController{
     if (!_searchController) {
-        CLMailSearchVC *vc = [[CLMailSearchVC alloc] init];
+        CLMailSearchVC *vc = [[CLMailSearchVC alloc] initWithStyle:UITableViewStyleGrouped];
         _searchController = [[UISearchController alloc]initWithSearchResultsController:vc];
         _searchController.searchBar.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width-12, 44);
         _searchController.searchBar.placeholder = @"多尼斯牵引器";
@@ -146,7 +154,11 @@
         [_searchController.searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"Rectangle 16"] forState:UIControlStateNormal];
         UITextField *searchField=[self.searchController.searchBar valueForKey:@"_searchField"];
         [searchField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        searchField.textColor = [UIColor whiteColor];
         _searchController.searchBar.backgroundColor = [UIColor clearColor];
+        //固定搜索框
+        self.definesPresentationContext = YES;
+        _searchController.hidesNavigationBarDuringPresentation = NO;
     }
     return _searchController;
 }

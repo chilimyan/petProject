@@ -11,6 +11,7 @@
 @interface CLSelectHeadView ()
 
 @property (nonatomic, strong)NSArray *scrollImages;
+@property (nonatomic, strong) SDCycleScrollView *cycleScrollView;
 
 @end
 
@@ -25,16 +26,15 @@
 }
 
 - (void)setSd_scrollViewDelegate:(id<SDCycleScrollViewDelegate>)sd_scrollViewDelegate{
-    _sd_scrollViewDelegate = sd_scrollViewDelegate;
+    _cycleScrollView.delegate = sd_scrollViewDelegate;
 }
 
 - (void)addScrollView{
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:self.bounds shouldInfiniteLoop:YES imageNamesGroup:self.scrollImages];
-    cycleScrollView.delegate = self.sd_scrollViewDelegate;
-    cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleClassic;
-    cycleScrollView.pageDotColor = [UIColor colorWithRed:255./255. green:255./255. blue:255./255. alpha:0.3];
-    [self addSubview:cycleScrollView];
-    cycleScrollView.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:self.bounds shouldInfiniteLoop:YES imageNamesGroup:self.scrollImages];
+    _cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleClassic;
+    _cycleScrollView.pageDotColor = [UIColor colorWithRed:255./255. green:255./255. blue:255./255. alpha:0.3];
+    [self addSubview:_cycleScrollView];
+    _cycleScrollView.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 }
 
 @end

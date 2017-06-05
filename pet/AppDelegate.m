@@ -10,6 +10,7 @@
 #import "CLTabVC.h"
 #import "CLSystemSet.h"
 #import "CLIntroductionVC.h"
+#import "CLBaiduOCRVC.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CLBaiduOCRVC alloc] initWithStyle:UITableViewStyleGrouped]];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CLTabVC alloc] init]];
     [self.window makeKeyWindow];
     

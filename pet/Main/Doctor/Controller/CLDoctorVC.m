@@ -75,7 +75,7 @@
     
     dispatch_after(delayTime, dispatch_get_main_queue(), ^{
         [self.tableView.mj_header endRefreshing];
-        [self.tableView.mj_footer resetNoMoreData];
+        [self.tableView.mj_footer endRefreshingWithNoMoreData];
     });
 }
 
