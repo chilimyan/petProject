@@ -13,14 +13,16 @@
 
 @property (nonatomic, strong) NSArray *imageViewsArray;
 @property (nonatomic, strong) UIImageView *imageOne;
+@property (nonatomic, assign) CLConstrainType constrainType;
 
 @end
 
 @implementation CLChannelImagesView
 
-- (instancetype)init
+- (instancetype)initWithConstrainType:(CLConstrainType )constrainType
 {
     if (self = [super init]) {
+        self.constrainType = constrainType;
         [self setup];
     }
     return self;
@@ -34,12 +36,21 @@
     [self addSubview:self.imageOne];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
     [self.imageOne addGestureRecognizer:tap];
-    [self.imageOne mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.mas_equalTo(self.mas_top).mas_offset(0);
-        make.width.mas_equalTo(230);
-        make.left.mas_equalTo(self.mas_left).mas_offset(0);
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(0);
-    }];
+    if (self.constrainType == ImageConstrainItemWidth) {
+        [self.imageOne mas_makeConstraints:^(MASConstraintMaker *make){
+            make.top.mas_equalTo(self.mas_top).mas_offset(0);
+            make.width.mas_equalTo(230);
+            make.left.mas_equalTo(self.mas_left).mas_offset(0);
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(0);
+        }];
+    }else{
+        [self.imageOne mas_makeConstraints:^(MASConstraintMaker *make){
+            make.top.mas_equalTo(self.mas_top).mas_offset(0);
+            make.width.mas_equalTo(kScreen.width - 20);
+            make.left.mas_equalTo(self.mas_left).mas_offset(0);
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(0);
+        }];
+    }
     
     NSMutableArray *temp = [NSMutableArray new];
     
@@ -53,7 +64,11 @@
         [temp addObject:imageView];
     }
     self.imageViewsArray = [temp copy];
-    [self.imageViewsArray mas_distributeSudokuViewsWithFixedItemWidth:(kScreen.width - 20 - 20)/3 fixedItemHeight:(kScreen.width - 20 - 20)/3 warpCount:3 topSpacing:0 bottomSpacing:0 leadSpacing:0 tailSpacing:0];
+    if (self.constrainType == ImageConstrainItemWidth) {
+        [self.imageViewsArray mas_distributeSudokuViewsWithFixedItemWidth:(kScreen.width - 20 - 20)/3 fixedItemHeight:(kScreen.width - 20 - 20)/3 warpCount:3 topSpacing:0 bottomSpacing:0 leadSpacing:0 tailSpacing:0];
+    }else{
+        [self.imageViewsArray mas_distributeSudokuViewsWithFixedLineSpacing:10 fixedInteritemSpacing:10 warpCount:3 topSpacing:0 bottomSpacing:0 leadSpacing:0 tailSpacing:0];
+    }
 }
 
 - (void)setPicPathStringsArray:(NSArray *)picPathStringsArray{

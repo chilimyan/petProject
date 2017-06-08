@@ -78,22 +78,60 @@
         make.height.mas_equalTo(0);
         make.left.mas_equalTo(weakSelf.contentView.mas_left).mas_offset(10);
         make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(-10);
-        make.bottom.mas_equalTo(weakSelf.contentView.mas_bottom).mas_offset(-12);
+        make.bottom.mas_equalTo(weakSelf.likeBtn.mas_top).mas_offset(-10);
     }];
-//    [self.likeBtn mas_makeConstraints:^(MASConstraintMaker *make){
-//        make.right.mas_equalTo(weakSelf.commentBtn.mas_left).mas_offset(-5);
-//        make.height.mas_equalTo(20);
-//        make.centerY.mas_equalTo(weakSelf.tipLabel.mas_centerY);
-//    }];
-//    [self.commentBtn mas_makeConstraints:^(MASConstraintMaker *make){
-//        make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(-10);
-//        make.height.mas_equalTo(20);
-//        make.centerY.mas_equalTo(weakSelf.tipLabel.mas_centerY);
-//    }];
+    [self.likeBtn mas_makeConstraints:^(MASConstraintMaker *make){
+        make.right.mas_equalTo(weakSelf.commentBtn.mas_left).mas_offset(-8);
+        make.height.mas_equalTo(20);
+        make.bottom.mas_equalTo(weakSelf.contentView.mas_bottom).mas_offset(-10);
+    }];
+    [self.commentBtn mas_makeConstraints:^(MASConstraintMaker *make){
+        make.right.mas_equalTo(weakSelf.contentView.mas_right).mas_offset(-10);
+        make.height.mas_equalTo(20);
+        make.bottom.mas_equalTo(weakSelf.contentView.mas_bottom).mas_offset(-10);
+    }];
 }
 
 - (void)setSelectModel:(CLSelectModel *)selectModel{
     _selectModel = selectModel;
+    [_headImage displayUser:[CLUser userWithName:_selectModel.createName userPhoto:_selectModel.createPhoto userId:_selectModel.createId] withTouchDetail:NO isCircle:YES];
+    NSMutableAttributedString *title = [NSMutableAttributedString new];
+    NSMutableAttributedString *name = [[NSMutableAttributedString alloc] initWithString:self.selectModel.createName];
+    name.yy_font = [UIFont systemFontOfSize:14];
+    name.yy_color = COLOR_NAME;
+    NSMutableAttributedString *address = [[NSMutableAttributedString alloc] initWithString:self.selectModel.createAddress];
+    address.yy_font = [UIFont systemFontOfSize:12];
+    address.yy_color = COLOR_GRAY;
+    [title appendAttributedString:name];
+    [title appendAttributedString:[self padding]];
+    [title appendAttributedString:address];
+    self.nameLabel.attributedText = title;
+    _timeLabel.text = _selectModel.createTime;
+    NSMutableAttributedString *content = [[NSMutableAttributedString alloc] initWithString:_selectModel.content];
+    [content setYy_lineSpacing:6.0f];
+    content.yy_font = [UIFont systemFontOfSize:14];
+    _contentLabel.attributedText = content;
+    if (_selectModel.imageUrls.count == 1) {
+        UIImage *oneImage = [UIImage imageNamed:_selectModel.imageUrls[0]];
+        CGFloat imageHeight = oneImage.size.height/oneImage.size.width*(kScreen.width-20);
+        [self.channelImagesView mas_updateConstraints:^(MASConstraintMaker *make){
+            make.height.mas_equalTo(imageHeight);
+        }];
+    }else{
+        NSInteger colum = _selectModel.imageUrls.count % 3 != 0 ? (_selectModel.imageUrls.count /3 + 1) : _selectModel.imageUrls.count /3;
+        CGFloat height = colum * (kScreen.width - 20 - 20)/3 + (colum -1)*10;
+        [self.channelImagesView mas_updateConstraints:^(MASConstraintMaker *make){
+            make.height.mas_equalTo(height);
+        }];
+    }
+    self.channelImagesView.picPathStringsArray = _selectModel.imageUrls;
+    [_likeBtn setTitle:@"23" forState:UIControlStateNormal];
+    [_commentBtn setTitle:@"6" forState:UIControlStateNormal];
+}
+
+- (NSAttributedString *)padding {
+    NSMutableAttributedString *pad = [[NSMutableAttributedString alloc] initWithString:@"   "];
+    return pad;
 }
 
 - (void)focusClicked:(UIButton *)sender{
@@ -106,7 +144,7 @@
 
 - (CLChannelImagesView *)channelImagesView{
     if (!_channelImagesView) {
-        _channelImagesView = [[CLChannelImagesView alloc] init];
+        _channelImagesView = [[CLChannelImagesView alloc] initWithConstrainType:ImageConstrainItemSpace];
     }
     return _channelImagesView;
 }

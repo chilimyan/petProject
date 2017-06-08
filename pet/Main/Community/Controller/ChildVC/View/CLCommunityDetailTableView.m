@@ -45,15 +45,30 @@ static NSString *const selectCommentCellIdentify = @"selectCommentCellIdentify";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     if (section == 0) {
-        return 10;
+        return 50;
     }
     return 0.01f;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     if (section == 0) {
-        UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen.width, 10)];
+        UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen.width, 50)];
         sectionView.backgroundColor = COLOR_BACK_GRAY;
+        UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 10, kScreen.width,40)];
+        backView.backgroundColor = [UIColor whiteColor];
+        [sectionView addSubview:backView];
+        UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(10,0, 120, 40)];
+        tipLabel.font = [UIFont systemFontOfSize:14];
+        tipLabel.textColor = COLOR_BLACK_LIGHT;
+        tipLabel.text = @"评论";
+        tipLabel.textAlignment = NSTextAlignmentLeft;
+        [backView addSubview:tipLabel];
+        UIButton *likeBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreen.width - 70,0,60, 40)];
+        likeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        [likeBtn setTitle:@"谁赞过" forState:UIControlStateNormal];
+        [likeBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+        [likeBtn setTitleColor:COLOR_BLACK_LIGHT forState:UIControlStateNormal];
+        [backView addSubview:likeBtn];
         return sectionView;
     }
     return nil;
@@ -89,14 +104,12 @@ static NSString *const selectCommentCellIdentify = @"selectCommentCellIdentify";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         CLDetailTableCell *cell = [tableView dequeueReusableCellWithIdentifier:detailTableCellIdentify forIndexPath:indexPath];
-//        CLSelectModel *model = _viewModel.selectList[indexPath.section];
-//        [cell setSelectModel:model];
+        [cell setSelectModel:_selectModel];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
         CLCommentTableCell *cell = [tableView dequeueReusableCellWithIdentifier:selectCommentCellIdentify forIndexPath:indexPath];
-//        CLSelectModel *model = _viewModel.selectList[indexPath.section];
-//        [cell setComment:model.comments[indexPath.row - 1]];
+        [cell setComment:_selectModel.comments[indexPath.row]];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }

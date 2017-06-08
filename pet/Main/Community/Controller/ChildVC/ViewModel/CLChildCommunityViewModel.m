@@ -196,6 +196,7 @@
     select.imageUrls = @[@"2B18C2D4941421681BD6B9FBCEC48C2D.jpg"];
     select.comments = [NSArray arrayWithArray:[self getComments]];
     select.likes = [NSArray arrayWithArray:[self getComments]];
+    select.createTime = @"12分钟前";
     
     CLSelectModel *select1 = [[CLSelectModel alloc] init];
     select1.createName = @"杰根大人的铲S官";
@@ -205,6 +206,7 @@
     select1.imageUrls = @[@"402FD6493BFE31152566135415C9F22A.jpg",@"45C272AAE3D9309128203B6D77C10BE2.jpg",@"4E35FA4B2D9C0636815C709FBD94DF5E.jpg"];
     select1.comments = [NSArray arrayWithArray:[self getComments]];
     select1.likes = [NSArray arrayWithArray:[self getComments]];
+    select1.createTime = @"1小时前";
     
     CLSelectModel *select2 = [[CLSelectModel alloc] init];
     select2.createName = @"面包馒头麻麻";
@@ -214,6 +216,7 @@
     select2.imageUrls = @[@"5345651BD274DFFB326F6C016FAAF45F.jpg"];
     select2.comments = [NSArray arrayWithArray:[self getComments]];
     select2.likes = [NSArray arrayWithArray:[self getComments]];
+    select2.createTime = @"一个月前";
     
     [tempArray addObject:select];
     [tempArray addObject:select1];

@@ -274,6 +274,7 @@ static CGFloat const selectSectionHeight = 10;
         CLSelectModel *model = _viewModel.selectList[indexPath.section];
         CLCommunityDetailVC *detailVC = [[CLCommunityDetailVC alloc] init];
         detailVC.hidesBottomBarWhenPushed = YES;
+        detailVC.selectModel = model;
         [self.parentVC.navigationController pushViewController:detailVC animated:YES];
     }else if ([self.title isEqualToString:DYNAMIC_TITLE]){
         

@@ -96,7 +96,7 @@
 
 - (CLChannelImagesView *)channelImagesView{
     if (!_channelImagesView) {
-        _channelImagesView = [[CLChannelImagesView alloc] init];
+        _channelImagesView = [[CLChannelImagesView alloc] initWithConstrainType:ImageConstrainItemWidth];
     }
     return _channelImagesView;
 }

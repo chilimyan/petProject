@@ -28,7 +28,8 @@
 @property (nonatomic, strong) NSArray *likes;
 //评论
 @property (nonatomic, strong) NSArray *comments;
-
+//发布时间
+@property (nonatomic, copy) NSString *createTime;
 
 @end
 

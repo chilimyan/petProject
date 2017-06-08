@@ -39,7 +39,7 @@
     [[UIButton appearanceWhenContainedIn:[UINavigationBar class], nil]  setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:17]}];
     
-//    [[UIView appearanceWhenContainedIn:[UIAlertController class], nil] setTintColor:[UIColor whiteColor]];
+    [[UIView appearanceWhenContainedIn:[UIAlertController class], nil] setTintColor:COLOR_BLACK_LIGHT];
     
     [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitle:@"取消"];
     

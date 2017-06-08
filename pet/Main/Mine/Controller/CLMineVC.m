@@ -12,6 +12,7 @@
 #import "CLMineDailyManagerCell.h"
 #import "CLMinePersonCenterCell.h"
 #import "CLMineSectionView.h"
+#import "CLMineDetailVC.h"
 
 @interface CLMineVC ()
 
@@ -27,6 +28,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadView
+{
+    [super loadView];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)initView{
@@ -125,6 +136,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            CLMineDetailVC *detailVC = [[CLMineDetailVC alloc] init];
+            detailVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:detailVC animated:YES];
+        }
+    }
 }
 
 @end
