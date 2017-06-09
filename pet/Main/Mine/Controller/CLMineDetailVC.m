@@ -9,6 +9,7 @@
 #import "CLMineDetailVC.h"
 #import "CLMinwDetailTableView.h"
 #import "CLHeadInfoView.h"
+#import "CLMinePetTableCell.h"
 #define HeadImageH kScreen.width/kScreen.height*210
 
 @interface CLMineDetailVC ()<CLMeTableDelegate,UIGestureRecognizerDelegate>
@@ -138,7 +139,7 @@
 
 - (UIButton *)backBtn{
     if (!_backBtn) {
-        _backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 10, 50, 60)];
+        _backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 10, 40, 60)];
         [_backBtn setImage:[UIImage imageNamed:@"nav_back_icon"] forState:UIControlStateNormal];
         [_backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     }

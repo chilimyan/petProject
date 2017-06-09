@@ -50,7 +50,15 @@ static char *showDetail;
                 placeholderImage:nameImage
                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                            if (image) {
-                               self.image = [image imageAddCornerWithRadius:radius];
+                               if (isCircle) {
+                                   if (image.size.width > image.size.height) {
+                                       self.image = [image imageAddCornerWithRadius:image.size.height/2];
+                                   }else{
+                                       self.image = [image imageAddCornerWithRadius:image.size.width/2];
+                                   }
+                               }else{
+                                   self.image = [image imageAddCornerWithRadius:radius];
+                               }
                            } else {
                                self.image = nameImage;
                            }

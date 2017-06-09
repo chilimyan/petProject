@@ -215,6 +215,7 @@
 		189B4CE91EE540E8006A6F30 /* CLCommunityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CE81EE540E8006A6F30 /* CLCommunityDetailVC.m */; };
 		189B4CFF1EE5782C006A6F30 /* CLCommunityDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4CFE1EE5782C006A6F30 /* CLCommunityDetailTableView.m */; };
 		189B4D021EE57DDA006A6F30 /* CLDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189B4D011EE57DDA006A6F30 /* CLDetailTableCell.m */; };
+		18D761BF1EEA7FC100F8B195 /* CLMineAlbumTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D761BE1EEA7FC100F8B195 /* CLMineAlbumTableCell.m */; };
 		614B62B4636A91CE374D7A9F /* libPods-pet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09A619C440B93D13D65305C /* libPods-pet.a */; };
 		D40544551ED0254400C70B29 /* CLSelectSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40544541ED0254400C70B29 /* CLSelectSectionView.m */; };
 		D405445C1ED0360D00C70B29 /* CLIntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D405445B1ED0360D00C70B29 /* CLIntroductionVC.m */; };
@@ -535,6 +536,8 @@
 		189B4CFE1EE5782C006A6F30 /* CLCommunityDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCommunityDetailTableView.m; sourceTree = "<group>"; };
 		189B4D001EE57DDA006A6F30 /* CLDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDetailTableCell.h; sourceTree = "<group>"; };
 		189B4D011EE57DDA006A6F30 /* CLDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDetailTableCell.m; sourceTree = "<group>"; };
+		18D761BD1EEA7FC100F8B195 /* CLMineAlbumTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMineAlbumTableCell.h; sourceTree = "<group>"; };
+		18D761BE1EEA7FC100F8B195 /* CLMineAlbumTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMineAlbumTableCell.m; sourceTree = "<group>"; };
 		3336EBFE8980394B461A17D1 /* Pods-pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pet/Pods-pet.debug.xcconfig"; sourceTree = "<group>"; };
 		68CEA7EB5927C86A17DCDF02 /* Pods-pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pet.release.xcconfig"; path = "Pods/Target Support Files/Pods-pet/Pods-pet.release.xcconfig"; sourceTree = "<group>"; };
 		A09A619C440B93D13D65305C /* libPods-pet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1348,6 +1351,8 @@
 				1858B94F1EE93B550007FEFB /* CLHeadInfoView.m */,
 				1858B9511EE977420007FEFB /* CLMinePetTableCell.h */,
 				1858B9521EE977420007FEFB /* CLMinePetTableCell.m */,
+				18D761BD1EEA7FC100F8B195 /* CLMineAlbumTableCell.h */,
+				18D761BE1EEA7FC100F8B195 /* CLMineAlbumTableCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1851,6 +1856,7 @@
 				D42E26141ECFED71002D3F7D /* CLCommunityViewModel.m in Sources */,
 				1860AF3A1EDFBC3200EC5232 /* CLDoctorTableView.m in Sources */,
 				189717B31EE68938003F0961 /* CLMinwDetailTableView.m in Sources */,
+				18D761BF1EEA7FC100F8B195 /* CLMineAlbumTableCell.m in Sources */,
 				D42E25E51ECF38B9002D3F7D /* UIImageView+Avatar.m in Sources */,
 				189B4CE21EE4F000006A6F30 /* CLWebViewVC.m in Sources */,
 				1860AF401EDFEE1400EC5232 /* UIView+Extension.m in Sources */,

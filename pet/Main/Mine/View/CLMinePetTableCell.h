@@ -10,4 +10,6 @@
 
 @interface CLMinePetTableCell : UITableViewCell
 
+- (void)configData;
+
 @end
